@@ -5987,6 +5987,1035 @@
      "flags": []
     }
    ]
+  },
+  {
+   "at": "2026-09-09T14:28:24.624984",
+   "mode": "window",
+   "dates": null,
+   "estimates": [
+    {
+     "dest_id": "madeira",
+     "name": "Madeira – Pico do Arieiro→Pico Ruivo, levadas",
+     "country": "Portugal",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "FNC",
+      "out_date": "2026-09-16",
+      "ret_date": "2026-09-18",
+      "price": 198.0,
+      "airline": "FR",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1609FNC18091?t=FR17895396001789599600001060MADLISFNC17897607001789811700000790FNCLISMAD_ff3ec009a8477ddfbe09a8e2343d26cb_19917&search_date=04092026&expected_price_uuid=01a06a5e-5353-8030-a5b8-c992710c80a9&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=cWXbVXuEWNWzpwolnotKSw&expected_price_source=share&expected_price_currency=eur&expected_price=198",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 40.0,
+     "hostel_per_night": 22.0,
+     "hostel_total": 44.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "Year-round. Best value Nov–Dec when the Alps are shut.",
+     "total": 307.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1609FNC18091?t=FR17895396001789599600001060MADLISFNC17897607001789811700000790FNCLISMAD_ff3ec009a8477ddfbe09a8e2343d26cb_19917&search_date=04092026&expected_price_uuid=01a06a5e-5353-8030-a5b8-c992710c80a9&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=cWXbVXuEWNWzpwolnotKSw&expected_price_source=share&expected_price_currency=eur&expected_price=198",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+FNC+on+2026-09-16+through+2026-09-18",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Funchal&date_from=2026-09-16&date_to=2026-09-18&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Funchal",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Funchal&checkin=2026-09-16&checkout=2026-09-18&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/FNC/Funchal",
+      "transit: Aerobus FNC→Funchal": "https://www.sam.pt/en/aerobus"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "serra_estrela",
+     "name": "Serra da Estrela",
+     "country": "Portugal",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "LIS",
+      "out_date": "2026-09-20",
+      "ret_date": "2026-09-22",
+      "price": 70.0,
+      "airline": "FR",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD2009LIS22091?t=FR17898942001789895700000085MADLIS17901144001790122800000080LISMAD_efaab72d718513aa824e8f6701405519_7099&search_date=02092026&expected_price_uuid=01a063aa-7845-8030-e3ec-c2b81cc756ad&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=STpEr-HiWjKBZx9kpv0YGw&expected_price_source=share&expected_price_currency=eur&expected_price=70",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 56.0,
+     "hostel_per_night": 25.0,
+     "hostel_total": 50.0,
+     "extras": 0.0,
+     "in_season": false,
+     "closure_note": "Snow possible in Dec – can be a bonus.",
+     "total": 201.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD2009LIS22091?t=FR17898942001789895700000085MADLIS17901144001790122800000080LISMAD_efaab72d718513aa824e8f6701405519_7099&search_date=02092026&expected_price_uuid=01a063aa-7845-8030-e3ec-c2b81cc756ad&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=STpEr-HiWjKBZx9kpv0YGw&expected_price_source=share&expected_price_currency=eur&expected_price=70",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+LIS+on+2026-09-20+through+2026-09-22",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Manteigas&date_from=2026-09-20&date_to=2026-09-22&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Manteigas",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Manteigas&checkin=2026-09-20&checkout=2026-09-22&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/LIS/Manteigas",
+      "transit: Rede Expressos bus Porto/Lisbon→Covilhã": "https://rede-expressos.pt"
+     },
+     "flags": [
+      "OUT OF SEASON",
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "rota_vicentina",
+     "name": "Rota Vicentina – Fishermen's Trail (cliff walk)",
+     "country": "Portugal",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "FAO",
+      "out_date": "2026-09-16",
+      "ret_date": "2026-09-19",
+      "price": 37.3,
+      "airline": "Ryanair",
+      "source": "ryanair",
+      "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-09-16&dateIn=2026-09-19&originIata=MAD&destinationIata=FAO",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 40.0,
+     "hostel_per_night": 25.0,
+     "hostel_total": 75.0,
+     "extras": 0.0,
+     "in_season": false,
+     "closure_note": "",
+     "total": 177.3,
+     "links": {
+      "flight": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-09-16&dateIn=2026-09-19&originIata=MAD&destinationIata=FAO",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+FAO+on+2026-09-16+through+2026-09-19",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Vila+Nova+de+Milfontes&date_from=2026-09-16&date_to=2026-09-19&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Vila+Nova+de+Milfontes",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Vila+Nova+de+Milfontes&checkin=2026-09-16&checkout=2026-09-19&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/FAO/Vila+Nova+de+Milfontes",
+      "transit: Rede Expressos Lisbon→Milfontes/Odeceixe": "https://rede-expressos.pt"
+     },
+     "flags": [
+      "OUT OF SEASON"
+     ]
+    },
+    {
+     "dest_id": "toubkal",
+     "name": "High Atlas – Imlil & Jebel Toubkal",
+     "country": "Morocco",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "RAK",
+      "out_date": "2026-09-17",
+      "ret_date": "2026-09-20",
+      "price": 75.0,
+      "airline": "FR",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1709RAK20091?t=FR17896500001789653900000125MADRAK17899248001789996200001070RAKCMNTNGMAD_51c3e7b7e1fd605109f899dface3a3ef_7520&search_date=08092026&expected_price_uuid=01a08003-e3df-8030-aa10-c540eeeaab09&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=IWD-UOHBTeUMhtdu1hueFw&expected_price_source=share&expected_price_currency=eur&expected_price=75",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 18.0,
+     "hostel_per_night": 15.0,
+     "hostel_total": 45.0,
+     "extras": 70.0,
+     "in_season": true,
+     "closure_note": "Dec needs crampons + guide (snow). Refuges provide bunks.",
+     "total": 233.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1709RAK20091?t=FR17896500001789653900000125MADRAK17899248001789996200001070RAKCMNTNGMAD_51c3e7b7e1fd605109f899dface3a3ef_7520&search_date=08092026&expected_price_uuid=01a08003-e3df-8030-aa10-c540eeeaab09&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=IWD-UOHBTeUMhtdu1hueFw&expected_price_source=share&expected_price_currency=eur&expected_price=75",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+RAK+on+2026-09-17+through+2026-09-20",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Imlil&date_from=2026-09-17&date_to=2026-09-20&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Imlil",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Imlil&checkin=2026-09-17&checkout=2026-09-20&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/RAK/Imlil"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "ait_bouguemez",
+     "name": "Aït Bouguemez valley & M'Goun",
+     "country": "Morocco",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "RAK",
+      "out_date": "2026-09-17",
+      "ret_date": "2026-09-20",
+      "price": 75.0,
+      "airline": "FR",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1709RAK20091?t=FR17896500001789653900000125MADRAK17899248001789996200001070RAKCMNTNGMAD_51c3e7b7e1fd605109f899dface3a3ef_7520&search_date=08092026&expected_price_uuid=01a08003-e3df-8030-aa10-c540eeeaab09&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=IWD-UOHBTeUMhtdu1hueFw&expected_price_source=share&expected_price_currency=eur&expected_price=75",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 30.0,
+     "hostel_per_night": 20.0,
+     "hostel_total": 60.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 190.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1709RAK20091?t=FR17896500001789653900000125MADRAK17899248001789996200001070RAKCMNTNGMAD_51c3e7b7e1fd605109f899dface3a3ef_7520&search_date=08092026&expected_price_uuid=01a08003-e3df-8030-aa10-c540eeeaab09&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=IWD-UOHBTeUMhtdu1hueFw&expected_price_source=share&expected_price_currency=eur&expected_price=75",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+RAK+on+2026-09-17+through+2026-09-20",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=A%C3%AFt+Bouguemez&date_from=2026-09-17&date_to=2026-09-20&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=A%C3%AFt+Bouguemez",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=A%C3%AFt+Bouguemez&checkin=2026-09-17&checkout=2026-09-20&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/RAK/A%C3%AFt+Bouguemez"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "todra_dades",
+     "name": "Todra & Dadès Gorges",
+     "country": "Morocco",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "RAK",
+      "out_date": "2026-09-17",
+      "ret_date": "2026-09-20",
+      "price": 75.0,
+      "airline": "FR",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1709RAK20091?t=FR17896500001789653900000125MADRAK17899248001789996200001070RAKCMNTNGMAD_51c3e7b7e1fd605109f899dface3a3ef_7520&search_date=08092026&expected_price_uuid=01a08003-e3df-8030-aa10-c540eeeaab09&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=IWD-UOHBTeUMhtdu1hueFw&expected_price_source=share&expected_price_currency=eur&expected_price=75",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 40.0,
+     "hostel_per_night": 15.0,
+     "hostel_total": 45.0,
+     "extras": 0.0,
+     "in_season": false,
+     "closure_note": "",
+     "total": 185.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1709RAK20091?t=FR17896500001789653900000125MADRAK17899248001789996200001070RAKCMNTNGMAD_51c3e7b7e1fd605109f899dface3a3ef_7520&search_date=08092026&expected_price_uuid=01a08003-e3df-8030-aa10-c540eeeaab09&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=IWD-UOHBTeUMhtdu1hueFw&expected_price_source=share&expected_price_currency=eur&expected_price=75",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+RAK+on+2026-09-17+through+2026-09-20",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Tinghir&date_from=2026-09-17&date_to=2026-09-20&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Tinghir",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Tinghir&checkin=2026-09-17&checkout=2026-09-20&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/RAK/Tinghir",
+      "transit: CTM/Supratours bus Marrakech→Tinghir (return)": "https://www.ctm.ma"
+     },
+     "flags": [
+      "OUT OF SEASON",
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "chefchaouen_rif",
+     "name": "Rif – Chefchaouen, Akchour waterfalls, Talassemtane",
+     "country": "Morocco",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "TNG",
+      "out_date": "2026-09-19",
+      "ret_date": "2026-09-21",
+      "price": 46.0,
+      "airline": "FR",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1909TNG21091?t=FR17898468001789848600000090MADTNG17900160001790028300000085TNGMAD_64c0b7589b25f107239b57a1602667a2_4685&search_date=03092026&expected_price_uuid=01a0670c-09d9-8040-6e27-551e22b39b40&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=OWSHDUOoLpOnnr1ybkLG5Q&expected_price_source=share&expected_price_currency=eur&expected_price=46",
+      "verified": true,
+      "verified_price": 51.0
+     },
+     "bag": 25.0,
+     "transit": 24.0,
+     "hostel_per_night": 12.0,
+     "hostel_total": 24.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 124.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1909TNG21091?t=FR17898468001789848600000090MADTNG17900160001790028300000085TNGMAD_64c0b7589b25f107239b57a1602667a2_4685&search_date=03092026&expected_price_uuid=01a0670c-09d9-8040-6e27-551e22b39b40&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=OWSHDUOoLpOnnr1ybkLG5Q&expected_price_source=share&expected_price_currency=eur&expected_price=46",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+TNG+on+2026-09-19+through+2026-09-21",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Chefchaouen&date_from=2026-09-19&date_to=2026-09-21&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Chefchaouen",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Chefchaouen&checkin=2026-09-19&checkout=2026-09-21&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/TNG/Chefchaouen",
+      "transit: CTM bus Tangier→Chefchaouen (return)": "https://www.ctm.ma"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "merzouga",
+     "name": "Erg Chebbi dunes – Merzouga",
+     "country": "Morocco",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "RAK",
+      "out_date": "2026-09-17",
+      "ret_date": "2026-09-20",
+      "price": 75.0,
+      "airline": "FR",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1709RAK20091?t=FR17896500001789653900000125MADRAK17899248001789996200001070RAKCMNTNGMAD_51c3e7b7e1fd605109f899dface3a3ef_7520&search_date=08092026&expected_price_uuid=01a08003-e3df-8030-aa10-c540eeeaab09&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=IWD-UOHBTeUMhtdu1hueFw&expected_price_source=share&expected_price_currency=eur&expected_price=75",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 40.0,
+     "hostel_per_night": 15.0,
+     "hostel_total": 45.0,
+     "extras": 35.0,
+     "in_season": false,
+     "closure_note": "",
+     "total": 220.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1709RAK20091?t=FR17896500001789653900000125MADRAK17899248001789996200001070RAKCMNTNGMAD_51c3e7b7e1fd605109f899dface3a3ef_7520&search_date=08092026&expected_price_uuid=01a08003-e3df-8030-aa10-c540eeeaab09&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=IWD-UOHBTeUMhtdu1hueFw&expected_price_source=share&expected_price_currency=eur&expected_price=75",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+RAK+on+2026-09-17+through+2026-09-20",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Merzouga&date_from=2026-09-17&date_to=2026-09-20&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Merzouga",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Merzouga&checkin=2026-09-17&checkout=2026-09-20&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/RAK/Merzouga"
+     },
+     "flags": [
+      "OUT OF SEASON",
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "ecrins_vercors",
+     "name": "Écrins / Vercors (Grenoble)",
+     "country": "France",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "LYS",
+      "out_date": "2026-09-17",
+      "ret_date": "2026-09-20",
+      "price": 153.0,
+      "airline": "X5",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1709LYS20091?t=U217896557001789721400001095MADPMILYS17899116001789978800001120LYSPMIMAD_a920063b495954072240c4f61ec89da6_15515&search_date=02092026&expected_price_uuid=01a063df-8813-8050-22a7-d39695da7188&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Nv4YfgKSW4kXRBjcakZGfw&expected_price_source=share&expected_price_currency=eur&expected_price=153",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 50.0,
+     "hostel_per_night": 30.0,
+     "hostel_total": 90.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 318.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1709LYS20091?t=U217896557001789721400001095MADPMILYS17899116001789978800001120LYSPMIMAD_a920063b495954072240c4f61ec89da6_15515&search_date=02092026&expected_price_uuid=01a063df-8813-8050-22a7-d39695da7188&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Nv4YfgKSW4kXRBjcakZGfw&expected_price_source=share&expected_price_currency=eur&expected_price=153",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+LYS+on+2026-09-17+through+2026-09-20",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Grenoble&date_from=2026-09-17&date_to=2026-09-20&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Grenoble",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Grenoble&checkin=2026-09-17&checkout=2026-09-20&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/LYS/Grenoble"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "verdon",
+     "name": "Gorges du Verdon",
+     "country": "France",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "MRS",
+      "out_date": "2026-09-19",
+      "ret_date": "2026-09-22",
+      "price": 65.49,
+      "airline": "Ryanair",
+      "source": "ryanair",
+      "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-09-19&dateIn=2026-09-22&originIata=MAD&destinationIata=MRS",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 30.0,
+     "hostel_per_night": 30.0,
+     "hostel_total": 90.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 210.49,
+     "links": {
+      "flight": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-09-19&dateIn=2026-09-22&originIata=MAD&destinationIata=MRS",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+MRS+on+2026-09-19+through+2026-09-22",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Castellane&date_from=2026-09-19&date_to=2026-09-22&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Castellane",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Castellane&checkin=2026-09-19&checkout=2026-09-22&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/MRS/Castellane",
+      "transit: Zou! bus Marseille/Nice→Castellane (return)": "https://zou.maregionsud.fr"
+     },
+     "flags": []
+    },
+    {
+     "dest_id": "calanques",
+     "name": "Calanques (Marseille)",
+     "country": "France",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "MRS",
+      "out_date": "2026-09-19",
+      "ret_date": "2026-09-22",
+      "price": 65.49,
+      "airline": "Ryanair",
+      "source": "ryanair",
+      "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-09-19&dateIn=2026-09-22&originIata=MAD&destinationIata=MRS",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 25.0,
+     "hostel_per_night": 28.0,
+     "hostel_total": 84.0,
+     "extras": 0.0,
+     "in_season": false,
+     "closure_note": "Fire-risk closures end in Oct; perfect autumn–winter.",
+     "total": 199.49,
+     "links": {
+      "flight": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-09-19&dateIn=2026-09-22&originIata=MAD&destinationIata=MRS",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+MRS+on+2026-09-19+through+2026-09-22",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Marseille&date_from=2026-09-19&date_to=2026-09-22&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Marseille",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Marseille&checkin=2026-09-19&checkout=2026-09-22&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/MRS/Marseille"
+     },
+     "flags": [
+      "OUT OF SEASON"
+     ]
+    },
+    {
+     "dest_id": "lauterbrunnen",
+     "name": "Lauterbrunnen / Grindelwald / Jungfrau",
+     "country": "Switzerland",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "ZRH",
+      "out_date": "2026-09-17",
+      "ret_date": "2026-09-21",
+      "price": 147.0,
+      "airline": "IB",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1709ZRH21091?t=IB17896752001789683600000140MADZRH17900163001790100600001405ZRHPMIMAD_5156e2248d6a53acc25389ea259e66d7_14655&search_date=04092026&expected_price_uuid=01a06d63-bca8-8030-29cd-c2dfa2ae8d69&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=yQJO1fDSECTly0lbjIIffQ&expected_price_source=share&expected_price_currency=eur&expected_price=147",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 78.0,
+     "hostel_per_night": 0.0,
+     "hostel_total": 0.0,
+     "extras": 40.0,
+     "in_season": true,
+     "closure_note": "Golden Sept–Oct; Nov is dead season (many lifts shut); Dec snowy but scenic.",
+     "total": 290.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1709ZRH21091?t=IB17896752001789683600000140MADZRH17900163001790100600001405ZRHPMIMAD_5156e2248d6a53acc25389ea259e66d7_14655&search_date=04092026&expected_price_uuid=01a06d63-bca8-8030-29cd-c2dfa2ae8d69&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=yQJO1fDSECTly0lbjIIffQ&expected_price_source=share&expected_price_currency=eur&expected_price=147",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+ZRH+on+2026-09-17+through+2026-09-21",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Lauterbrunnen&date_from=2026-09-17&date_to=2026-09-21&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Lauterbrunnen",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Lauterbrunnen&checkin=2026-09-17&checkout=2026-09-21&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/ZRH/Lauterbrunnen",
+      "transit: SBB Saver Day Pass (Basel→Lauterbrunnen & back)": "https://www.sbb.ch/en/tickets-offers/tickets/saver-day-pass.html"
+     },
+     "flags": [
+      "free stay (friend)",
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "zermatt",
+     "name": "Zermatt – Five Lakes, Gornergrat",
+     "country": "Switzerland",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "ZRH",
+      "out_date": "2026-09-17",
+      "ret_date": "2026-09-21",
+      "price": 147.0,
+      "airline": "IB",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1709ZRH21091?t=IB17896752001789683600000140MADZRH17900163001790100600001405ZRHPMIMAD_5156e2248d6a53acc25389ea259e66d7_14655&search_date=04092026&expected_price_uuid=01a06d63-bca8-8030-29cd-c2dfa2ae8d69&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=yQJO1fDSECTly0lbjIIffQ&expected_price_source=share&expected_price_currency=eur&expected_price=147",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 100.0,
+     "hostel_per_night": 0.0,
+     "hostel_total": 0.0,
+     "extras": 45.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 317.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1709ZRH21091?t=IB17896752001789683600000140MADZRH17900163001790100600001405ZRHPMIMAD_5156e2248d6a53acc25389ea259e66d7_14655&search_date=04092026&expected_price_uuid=01a06d63-bca8-8030-29cd-c2dfa2ae8d69&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=yQJO1fDSECTly0lbjIIffQ&expected_price_source=share&expected_price_currency=eur&expected_price=147",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+ZRH+on+2026-09-17+through+2026-09-21",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Zermatt&date_from=2026-09-17&date_to=2026-09-21&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Zermatt",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Zermatt&checkin=2026-09-17&checkout=2026-09-21&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/ZRH/Zermatt",
+      "transit: SBB Saver Day Pass x2": "https://www.sbb.ch/en/tickets-offers/tickets/saver-day-pass.html"
+     },
+     "flags": [
+      "free stay (friend)",
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "oeschinensee",
+     "name": "Oeschinensee / Kandersteg",
+     "country": "Switzerland",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "ZRH",
+      "out_date": "2026-09-17",
+      "ret_date": "2026-09-21",
+      "price": 147.0,
+      "airline": "IB",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1709ZRH21091?t=IB17896752001789683600000140MADZRH17900163001790100600001405ZRHPMIMAD_5156e2248d6a53acc25389ea259e66d7_14655&search_date=04092026&expected_price_uuid=01a06d63-bca8-8030-29cd-c2dfa2ae8d69&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=yQJO1fDSECTly0lbjIIffQ&expected_price_source=share&expected_price_currency=eur&expected_price=147",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 78.0,
+     "hostel_per_night": 0.0,
+     "hostel_total": 0.0,
+     "extras": 30.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 280.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1709ZRH21091?t=IB17896752001789683600000140MADZRH17900163001790100600001405ZRHPMIMAD_5156e2248d6a53acc25389ea259e66d7_14655&search_date=04092026&expected_price_uuid=01a06d63-bca8-8030-29cd-c2dfa2ae8d69&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=yQJO1fDSECTly0lbjIIffQ&expected_price_source=share&expected_price_currency=eur&expected_price=147",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+ZRH+on+2026-09-17+through+2026-09-21",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Kandersteg&date_from=2026-09-17&date_to=2026-09-21&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Kandersteg",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Kandersteg&checkin=2026-09-17&checkout=2026-09-21&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/ZRH/Kandersteg"
+     },
+     "flags": [
+      "free stay (friend)",
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "appenzell",
+     "name": "Appenzell – Ebenalp, Seealpsee",
+     "country": "Switzerland",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "ZRH",
+      "out_date": "2026-09-17",
+      "ret_date": "2026-09-21",
+      "price": 147.0,
+      "airline": "IB",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1709ZRH21091?t=IB17896752001789683600000140MADZRH17900163001790100600001405ZRHPMIMAD_5156e2248d6a53acc25389ea259e66d7_14655&search_date=04092026&expected_price_uuid=01a06d63-bca8-8030-29cd-c2dfa2ae8d69&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=yQJO1fDSECTly0lbjIIffQ&expected_price_source=share&expected_price_currency=eur&expected_price=147",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 50.0,
+     "hostel_per_night": 0.0,
+     "hostel_total": 0.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 222.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1709ZRH21091?t=IB17896752001789683600000140MADZRH17900163001790100600001405ZRHPMIMAD_5156e2248d6a53acc25389ea259e66d7_14655&search_date=04092026&expected_price_uuid=01a06d63-bca8-8030-29cd-c2dfa2ae8d69&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=yQJO1fDSECTly0lbjIIffQ&expected_price_source=share&expected_price_currency=eur&expected_price=147",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+ZRH+on+2026-09-17+through+2026-09-21",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Appenzell&date_from=2026-09-17&date_to=2026-09-21&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Appenzell",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Appenzell&checkin=2026-09-17&checkout=2026-09-21&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/ZRH/Appenzell"
+     },
+     "flags": [
+      "free stay (friend)",
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "ticino",
+     "name": "Ticino – Verzasca & Maggia valleys",
+     "country": "Switzerland",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "MXP",
+      "out_date": "2026-09-17",
+      "ret_date": "2026-09-22",
+      "price": 53.0,
+      "airline": "FR",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1709MXP22091?t=FR17896254001789633200000130MADMXP17901177001790126100000140MXPMAD_3be4261f1826155a9678c0fe51939909_5272&search_date=04092026&expected_price_uuid=01a06da6-5f78-8030-af9d-e2acda7f58d4&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=P_6H5C9_5u_bnUbX4PhIKw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=53",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 50.0,
+     "hostel_per_night": 40.0,
+     "hostel_total": 200.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 328.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1709MXP22091?t=FR17896254001789633200000130MADMXP17901177001790126100000140MXPMAD_3be4261f1826155a9678c0fe51939909_5272&search_date=04092026&expected_price_uuid=01a06da6-5f78-8030-af9d-e2acda7f58d4&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=P_6H5C9_5u_bnUbX4PhIKw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=53",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+MXP+on+2026-09-17+through+2026-09-22",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Locarno&date_from=2026-09-17&date_to=2026-09-22&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Locarno",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Locarno&checkin=2026-09-17&checkout=2026-09-22&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/MXP/Locarno"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "hallstatt_dachstein",
+     "name": "Hallstatt / Dachstein (5 Fingers, Gosausee)",
+     "country": "Austria",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "VIE",
+      "out_date": "2026-09-19",
+      "ret_date": "2026-09-22",
+      "price": 206.89000000000001,
+      "airline": "Ryanair",
+      "source": "ryanair",
+      "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-09-19&dateIn=2026-09-22&originIata=MAD&destinationIata=VIE",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 40.0,
+     "hostel_per_night": 35.0,
+     "hostel_total": 105.0,
+     "extras": 38.0,
+     "in_season": true,
+     "closure_note": "Dachstein lifts run to late Oct.",
+     "total": 414.89,
+     "links": {
+      "flight": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-09-19&dateIn=2026-09-22&originIata=MAD&destinationIata=VIE",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+VIE+on+2026-09-19+through+2026-09-22",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Hallstatt&date_from=2026-09-19&date_to=2026-09-22&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Hallstatt",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Hallstatt&checkin=2026-09-19&checkout=2026-09-22&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/VIE/Hallstatt",
+      "transit: Train Salzburg→Hallstatt via Attnang (return)": "https://www.oebb.at"
+     },
+     "flags": []
+    },
+    {
+     "dest_id": "innsbruck_stubai",
+     "name": "Innsbruck – Nordkette, Stubai",
+     "country": "Austria",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "MUC",
+      "out_date": "2026-09-18",
+      "ret_date": "2026-09-20",
+      "price": 282.0,
+      "airline": "KM",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1809MUC20091?t=KM17897292001789811100001365MADMLAMUC17899143001790068200002565MUCPRNMXPMAD_2f663104ff774ef6e02cce02f810a281_28312&search_date=06092026&expected_price_uuid=01a0765b-f35d-8030-e665-eb1a5d3440ab&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ss6PZriU_MhoHUb-I_vKeQ&expected_price_source=share&expected_price_currency=eur&expected_price=282",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 20.0,
+     "hostel_per_night": 30.0,
+     "hostel_total": 60.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "Autumn hiking to Oct; Dec = snow walking / Nordkette open.",
+     "total": 387.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1809MUC20091?t=KM17897292001789811100001365MADMLAMUC17899143001790068200002565MUCPRNMXPMAD_2f663104ff774ef6e02cce02f810a281_28312&search_date=06092026&expected_price_uuid=01a0765b-f35d-8030-e665-eb1a5d3440ab&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ss6PZriU_MhoHUb-I_vKeQ&expected_price_source=share&expected_price_currency=eur&expected_price=282",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+MUC+on+2026-09-18+through+2026-09-20",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Innsbruck&date_from=2026-09-18&date_to=2026-09-20&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Innsbruck",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Innsbruck&checkin=2026-09-18&checkout=2026-09-20&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/MUC/Innsbruck"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "zell_am_see",
+     "name": "Zell am See / Kaprun",
+     "country": "Austria",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "MUC",
+      "out_date": "2026-09-18",
+      "ret_date": "2026-09-20",
+      "price": 282.0,
+      "airline": "KM",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1809MUC20091?t=KM17897292001789811100001365MADMLAMUC17899143001790068200002565MUCPRNMXPMAD_2f663104ff774ef6e02cce02f810a281_28312&search_date=06092026&expected_price_uuid=01a0765b-f35d-8030-e665-eb1a5d3440ab&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ss6PZriU_MhoHUb-I_vKeQ&expected_price_source=share&expected_price_currency=eur&expected_price=282",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 40.0,
+     "hostel_per_night": 35.0,
+     "hostel_total": 70.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 417.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1809MUC20091?t=KM17897292001789811100001365MADMLAMUC17899143001790068200002565MUCPRNMXPMAD_2f663104ff774ef6e02cce02f810a281_28312&search_date=06092026&expected_price_uuid=01a0765b-f35d-8030-e665-eb1a5d3440ab&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ss6PZriU_MhoHUb-I_vKeQ&expected_price_source=share&expected_price_currency=eur&expected_price=282",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+MUC+on+2026-09-18+through+2026-09-20",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Zell+am+See&date_from=2026-09-18&date_to=2026-09-20&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Zell+am+See",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Zell+am+See&checkin=2026-09-18&checkout=2026-09-20&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/MUC/Zell+am+See",
+      "transit: Train Salzburg→Zell am See (return)": "https://www.oebb.at"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "zillertal",
+     "name": "Zillertal",
+     "country": "Austria",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "MUC",
+      "out_date": "2026-09-18",
+      "ret_date": "2026-09-20",
+      "price": 282.0,
+      "airline": "KM",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1809MUC20091?t=KM17897292001789811100001365MADMLAMUC17899143001790068200002565MUCPRNMXPMAD_2f663104ff774ef6e02cce02f810a281_28312&search_date=06092026&expected_price_uuid=01a0765b-f35d-8030-e665-eb1a5d3440ab&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ss6PZriU_MhoHUb-I_vKeQ&expected_price_source=share&expected_price_currency=eur&expected_price=282",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 30.0,
+     "hostel_per_night": 35.0,
+     "hostel_total": 70.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 407.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1809MUC20091?t=KM17897292001789811100001365MADMLAMUC17899143001790068200002565MUCPRNMXPMAD_2f663104ff774ef6e02cce02f810a281_28312&search_date=06092026&expected_price_uuid=01a0765b-f35d-8030-e665-eb1a5d3440ab&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ss6PZriU_MhoHUb-I_vKeQ&expected_price_source=share&expected_price_currency=eur&expected_price=282",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+MUC+on+2026-09-18+through+2026-09-20",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Mayrhofen&date_from=2026-09-18&date_to=2026-09-20&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Mayrhofen",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Mayrhofen&checkin=2026-09-18&checkout=2026-09-20&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/MUC/Mayrhofen"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "dolomites",
+     "name": "Dolomites – Tre Cime, Seceda, Alpe di Siusi, Braies",
+     "country": "Italy",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "VCE",
+      "out_date": "2026-09-15",
+      "ret_date": "2026-09-17",
+      "price": 89.0,
+      "airline": "MW",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1509VCE17091?t=W417894760001789484700000145MADVCE17896248001789634400000160VCEMAD_4bcee1168b932796948b2b2591490be9_8895&search_date=05092026&expected_price_uuid=01a07238-ea20-8030-29d6-ba7c6ecfb084&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=R_h9PjGQqwfv_lF6sea5QA&expected_price_source=share&expected_price_currency=eur&expected_price=89",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 70.0,
+     "hostel_per_night": 35.0,
+     "hostel_total": 70.0,
+     "extras": 40.0,
+     "in_season": true,
+     "closure_note": "Huts & shuttle buses stop mid-Oct; lifts close ~early Oct.",
+     "total": 294.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1509VCE17091?t=W417894760001789484700000145MADVCE17896248001789634400000160VCEMAD_4bcee1168b932796948b2b2591490be9_8895&search_date=05092026&expected_price_uuid=01a07238-ea20-8030-29d6-ba7c6ecfb084&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=R_h9PjGQqwfv_lF6sea5QA&expected_price_source=share&expected_price_currency=eur&expected_price=89",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+VCE+on+2026-09-15+through+2026-09-17",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Cortina&date_from=2026-09-15&date_to=2026-09-17&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Cortina",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Cortina&checkin=2026-09-15&checkout=2026-09-17&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/VCE/Cortina",
+      "transit: Cortina Express / FlixBus Venice→Cortina (return)": "https://www.cortinaexpress.it"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "gran_paradiso",
+     "name": "Gran Paradiso / Aosta Valley",
+     "country": "Italy",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "MXP",
+      "out_date": "2026-09-17",
+      "ret_date": "2026-09-22",
+      "price": 53.0,
+      "airline": "FR",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1709MXP22091?t=FR17896254001789633200000130MADMXP17901177001790126100000140MXPMAD_3be4261f1826155a9678c0fe51939909_5272&search_date=04092026&expected_price_uuid=01a06da6-5f78-8030-af9d-e2acda7f58d4&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=P_6H5C9_5u_bnUbX4PhIKw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=53",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 40.0,
+     "hostel_per_night": 30.0,
+     "hostel_total": 150.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 268.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1709MXP22091?t=FR17896254001789633200000130MADMXP17901177001790126100000140MXPMAD_3be4261f1826155a9678c0fe51939909_5272&search_date=04092026&expected_price_uuid=01a06da6-5f78-8030-af9d-e2acda7f58d4&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=P_6H5C9_5u_bnUbX4PhIKw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=53",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+MXP+on+2026-09-17+through+2026-09-22",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Aosta&date_from=2026-09-17&date_to=2026-09-22&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Aosta",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Aosta&checkin=2026-09-17&checkout=2026-09-22&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/MXP/Aosta"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "lake_como",
+     "name": "Lake Como / Garda ridge hikes",
+     "country": "Italy",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "MXP",
+      "out_date": "2026-09-17",
+      "ret_date": "2026-09-22",
+      "price": 53.0,
+      "airline": "FR",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1709MXP22091?t=FR17896254001789633200000130MADMXP17901177001790126100000140MXPMAD_3be4261f1826155a9678c0fe51939909_5272&search_date=04092026&expected_price_uuid=01a06da6-5f78-8030-af9d-e2acda7f58d4&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=P_6H5C9_5u_bnUbX4PhIKw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=53",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 30.0,
+     "hostel_per_night": 30.0,
+     "hostel_total": 150.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 258.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1709MXP22091?t=FR17896254001789633200000130MADMXP17901177001790126100000140MXPMAD_3be4261f1826155a9678c0fe51939909_5272&search_date=04092026&expected_price_uuid=01a06da6-5f78-8030-af9d-e2acda7f58d4&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=P_6H5C9_5u_bnUbX4PhIKw&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=53",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+MXP+on+2026-09-17+through+2026-09-22",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Como&date_from=2026-09-17&date_to=2026-09-22&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Como",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Como&checkin=2026-09-17&checkout=2026-09-22&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/MXP/Como"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "amalfi_path_of_gods",
+     "name": "Amalfi – Path of the Gods",
+     "country": "Italy",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "NAP",
+      "out_date": "2026-09-19",
+      "ret_date": "2026-09-22",
+      "price": 121.0,
+      "airline": "AL",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1909NAP22091?t=FR17898279001789899300001190MADMXPNAP17900742001790126100000865NAPMXPMAD_08315f1321c451059cc102b46642d757_12058&search_date=07092026&expected_price_uuid=01a07b19-d846-8030-e452-0a6093fb2606&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=-SMbgQvGPhNt87xu5oMzlQ&expected_price_source=share&expected_price_currency=eur&expected_price=121",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 20.0,
+     "hostel_per_night": 30.0,
+     "hostel_total": 90.0,
+     "extras": 0.0,
+     "in_season": false,
+     "closure_note": "",
+     "total": 256.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1909NAP22091?t=FR17898279001789899300001190MADMXPNAP17900742001790126100000865NAPMXPMAD_08315f1321c451059cc102b46642d757_12058&search_date=07092026&expected_price_uuid=01a07b19-d846-8030-e452-0a6093fb2606&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=-SMbgQvGPhNt87xu5oMzlQ&expected_price_source=share&expected_price_currency=eur&expected_price=121",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+NAP+on+2026-09-19+through+2026-09-22",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Sorrento&date_from=2026-09-19&date_to=2026-09-22&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Sorrento",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Sorrento&checkin=2026-09-19&checkout=2026-09-22&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/NAP/Sorrento"
+     },
+     "flags": [
+      "OUT OF SEASON",
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "etna",
+     "name": "Etna (Sicily)",
+     "country": "Italy",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "CTA",
+      "out_date": "2026-09-17",
+      "ret_date": "2026-09-20",
+      "price": 147.0,
+      "airline": "FR",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1709CTA20091?t=FR17896275001789689540001034MADTRNCTA17899311001790008500001290CTAAHOMAD_3762df81a7f0d58055f1a37f6f44ec85_14697&search_date=07092026&expected_price_uuid=01a07da1-486a-8040-67f5-87255f8de85a&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Ekfe99kOIyjySov2UAuPKQ&expected_price_source=share&expected_price_currency=eur&expected_price=147",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 14.0,
+     "hostel_per_night": 22.0,
+     "hostel_total": 66.0,
+     "extras": 35.0,
+     "in_season": false,
+     "closure_note": "",
+     "total": 287.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1709CTA20091?t=FR17896275001789689540001034MADTRNCTA17899311001790008500001290CTAAHOMAD_3762df81a7f0d58055f1a37f6f44ec85_14697&search_date=07092026&expected_price_uuid=01a07da1-486a-8040-67f5-87255f8de85a&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Ekfe99kOIyjySov2UAuPKQ&expected_price_source=share&expected_price_currency=eur&expected_price=147",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+CTA+on+2026-09-17+through+2026-09-20",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Catania&date_from=2026-09-17&date_to=2026-09-20&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Catania",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Catania&checkin=2026-09-17&checkout=2026-09-20&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/CTA/Catania"
+     },
+     "flags": [
+      "OUT OF SEASON",
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "sardinia_gorropu",
+     "name": "Sardinia – Gola di Gorropu, Supramonte",
+     "country": "Italy",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "CAG",
+      "out_date": "2026-09-16",
+      "ret_date": "2026-09-21",
+      "price": 92.0,
+      "airline": "FR",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1609CAG21091?t=FR17895624001789569900000125MADCAG17900334001790126100001545CAGBGYMXPMAD_3476cec52b21be32c6fac119688b73dd_9282&search_date=02092026&expected_price_uuid=01a062a3-446c-8030-a115-e36e7d90963e&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=6ISSLCOqdwSp3JOCEpXI7g&expected_price_source=share&expected_price_currency=eur&expected_price=92",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 30.0,
+     "hostel_per_night": 28.0,
+     "hostel_total": 140.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 287.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1609CAG21091?t=FR17895624001789569900000125MADCAG17900334001790126100001545CAGBGYMXPMAD_3476cec52b21be32c6fac119688b73dd_9282&search_date=02092026&expected_price_uuid=01a062a3-446c-8030-a115-e36e7d90963e&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=6ISSLCOqdwSp3JOCEpXI7g&expected_price_source=share&expected_price_currency=eur&expected_price=92",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+CAG+on+2026-09-16+through+2026-09-21",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Dorgali&date_from=2026-09-16&date_to=2026-09-21&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Dorgali",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Dorgali&checkin=2026-09-16&checkout=2026-09-21&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/CAG/Dorgali"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "ardennes_high_fens",
+     "name": "Belgian Ardennes & High Fens (via Eindhoven)",
+     "country": "Netherlands",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "BRU",
+      "out_date": "2026-09-16",
+      "ret_date": "2026-09-21",
+      "price": 89.0,
+      "airline": "FR",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1609BRU21091?t=FR17895909001789599300000140MADCRL17900070001790015700000145CRLMAD_f5654837b44bec2619364203d11c5c26_8867&search_date=05092026&expected_price_uuid=01a07141-0ebb-8030-e167-114059affe6b&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=neQXU3cQMBC_hL84vXgCgw&expected_price_source=share&expected_price_currency=eur&expected_price=89",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 45.0,
+     "hostel_per_night": 30.0,
+     "hostel_total": 150.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 309.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1609BRU21091?t=FR17895909001789599300000140MADCRL17900070001790015700000145CRLMAD_f5654837b44bec2619364203d11c5c26_8867&search_date=05092026&expected_price_uuid=01a07141-0ebb-8030-e167-114059affe6b&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=neQXU3cQMBC_hL84vXgCgw&expected_price_source=share&expected_price_currency=eur&expected_price=89",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+BRU+on+2026-09-16+through+2026-09-21",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Eupen&date_from=2026-09-16&date_to=2026-09-21&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Eupen",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Eupen&checkin=2026-09-16&checkout=2026-09-21&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/BRU/Eupen"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "mullerthal",
+     "name": "Luxembourg – Mullerthal Trail",
+     "country": "Netherlands",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "LUX",
+      "out_date": "2026-09-19",
+      "ret_date": "2026-09-22",
+      "price": 85.65,
+      "airline": "Ryanair",
+      "source": "ryanair",
+      "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-09-19&dateIn=2026-09-22&originIata=MAD&destinationIata=LUX",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 40.0,
+     "hostel_per_night": 28.0,
+     "hostel_total": 84.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 234.65,
+     "links": {
+      "flight": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-09-19&dateIn=2026-09-22&originIata=MAD&destinationIata=LUX",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+LUX+on+2026-09-19+through+2026-09-22",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Echternach&date_from=2026-09-19&date_to=2026-09-22&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Echternach",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Echternach&checkin=2026-09-19&checkout=2026-09-22&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/LUX/Echternach"
+     },
+     "flags": []
+    }
+   ]
   }
  ]
 }
