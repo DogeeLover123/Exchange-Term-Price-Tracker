@@ -1,0 +1,74 @@
+name: trip-tracker
+
+on:
+  schedule:
+    # every 2 days at 06:00 UTC = 08:00 Madrid (CEST) / 07:00 (CET from late Oct)
+    - cron: "0 6 */2 * *"
+  workflow_dispatch:
+    inputs:
+      countries:
+        description: "Only these countries this run (comma-separated, empty = settings.yaml)"
+        required: false
+        default: ""
+      date_to:
+        description: "Cap the search window end (YYYY-MM-DD, empty = settings.yaml)"
+        required: false
+        default: ""
+      force_verify:
+        description: "Google-verify every in-season trip (uses SerpApi quota)"
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: trip-tracker
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run tracker
+        env:
+          TRAVELPAYOUTS_TOKEN: ${{ secrets.TRAVELPAYOUTS_TOKEN }}
+          SERPAPI_KEYS: ${{ secrets.SERPAPI_KEYS }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
+          IN_COUNTRIES: ${{ inputs.countries }}
+          IN_DATE_TO: ${{ inputs.date_to }}
+          IN_FORCE_VERIFY: ${{ inputs.force_verify }}
+        run: |
+          ARGS=""
+          [ -n "$IN_COUNTRIES" ] && ARGS="$ARGS --countries $IN_COUNTRIES"
+          [ -n "$IN_DATE_TO" ] && ARGS="$ARGS --to $IN_DATE_TO"
+          [ "$IN_FORCE_VERIFY" = "true" ] && ARGS="$ARGS --force-verify"
+          python -m tracker.run $ARGS
+
+      - name: Commit history and dashboard data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/history.json docs/data.json
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+          else
+            git commit -m "tracker run $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase origin main
+            git push
+          fi
