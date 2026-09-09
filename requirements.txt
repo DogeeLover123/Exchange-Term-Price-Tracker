@@ -1,0 +1,4 @@
+pyyaml>=6.0
+requests>=2.31
+ryanair-py>=2.3
+fast-flights>=2.2

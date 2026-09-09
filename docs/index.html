@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trail board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF1E9; --ink:#1F2A22; --spruce:#2F5D3A; --moss:#C9D3BF; --glacier:#2C6E93;
+  --marker:#D9781C; --mute:#5D6B60; --row:#F7F9F3;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Public Sans",system-ui,sans-serif;font-size:15px;line-height:1.45}
+a{color:var(--glacier)}
+header{padding:28px 24px 0;max-width:1180px;margin:0 auto}
+h1{font-size:30px;font-weight:800;margin:0 0 4px;letter-spacing:-.01em}
+.sub{color:var(--mute);margin:0 0 18px}
+.hero{font-size:22px;font-weight:600;margin:0 0 20px;max-width:72ch}
+.hero b{color:var(--spruce)}
+.contour{display:block;width:100%;height:34px;margin:0 0 6px}
+nav{display:flex;gap:4px;border-bottom:2px solid var(--moss)}
+nav button{background:none;border:0;padding:10px 16px;font:inherit;font-weight:600;color:var(--mute);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px}
+nav button[aria-selected=true]{color:var(--ink);border-color:var(--spruce)}
+nav button:focus-visible{outline:2px solid var(--glacier);outline-offset:2px}
+main{max-width:1180px;margin:0 auto;padding:16px 24px 60px}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:8px 0 14px;color:var(--mute)}
+.tools input{font:inherit;padding:7px 10px;border:1px solid var(--moss);border-radius:6px;background:#fff;min-width:220px}
+.btn{font:inherit;font-weight:600;padding:7px 14px;border-radius:6px;border:1px solid var(--spruce);background:var(--spruce);color:#fff;cursor:pointer}
+.btn.quiet{background:#fff;color:var(--spruce)}
+.btn:focus-visible{outline:2px solid var(--glacier);outline-offset:2px}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-weight:600;color:var(--mute);padding:6px 8px;border-bottom:1px solid var(--moss);font-size:13px}
+td{padding:10px 8px;border-bottom:1px solid var(--moss);vertical-align:top}
+tr.deal td:first-child{box-shadow:inset 4px 0 0 var(--marker)}
+tr.off td{color:var(--mute)}
+td.num,th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.name{font-weight:600}
+.meta{font-size:13px;color:var(--mute)}
+.why{font-size:13px;color:var(--marker);font-weight:600}
+.links{font-size:13px;line-height:1.9}
+.links a{margin-right:10px;white-space:nowrap}
+.star{font:inherit;background:none;border:1px solid var(--moss);border-radius:6px;padding:4px 10px;cursor:pointer;color:var(--ink)}
+.star[aria-pressed=true]{background:var(--spruce);color:#fff;border-color:var(--spruce)}
+.empty{padding:40px 0;color:var(--mute);max-width:60ch}
+.note{font-size:13px;color:var(--mute);margin-top:18px}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;opacity:0;transition:opacity .2s}
+.toast.show{opacity:1}
+@media(max-width:800px){.hide-m{display:none}h1{font-size:24px}.hero{font-size:18px}}
+@media(prefers-reduced-motion:reduce){.toast{transition:none}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Trail board</h1>
+  <p class="sub" id="sub">Loading the latest scan…</p>
+  <p class="hero" id="hero"></p>
+  <svg class="contour" viewBox="0 0 1200 34" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 22 C120 10 180 30 300 20 S520 6 640 18 S860 30 980 16 S1140 8 1200 20" fill="none" stroke="#C9D3BF" stroke-width="1.4"/>
+    <path d="M0 30 C150 18 220 34 340 26 S560 14 680 26 S900 34 1020 22 S1160 16 1200 28" fill="none" stroke="#C9D3BF" stroke-width="1"/>
+  </svg>
+  <nav role="tablist">
+    <button role="tab" aria-selected="true" data-tab="latest">Latest</button>
+    <button role="tab" aria-selected="false" data-tab="saved">Saved <span id="savedCount"></span></button>
+  </nav>
+</header>
+<main>
+  <section id="latest">
+    <div class="tools">
+      <input id="q" placeholder="Filter by place or country">
+      <label><input type="checkbox" id="onlyDeals"> deals only</label>
+      <label><input type="checkbox" id="showOff"> include out-of-season</label>
+    </div>
+    <div id="latestTable"></div>
+    <p class="note">Flight prices are live from the last scan; hostel and transit are estimates. Grey rows are outside the sensible season. Saved trips are kept in this browser, so save on the device you'll use.</p>
+  </section>
+  <section id="saved" hidden>
+    <div class="tools">
+      <button class="btn" id="share">Copy share link</button>
+      <button class="btn quiet" id="export">Download saved.json</button>
+      <button class="btn quiet" id="clear">Remove all</button>
+      <span id="shareHint"></span>
+    </div>
+    <div id="savedTable"></div>
+    <p class="note">A share link carries your saved trips inside the URL, so friends see the same list with today's prices. If they open it, those trips are added to their own board.</p>
+  </section>
+</main>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const eur = n => '€' + Math.round(n);
+const fmt = d => new Date(d + 'T00:00').toLocaleDateString('en-GB', {day:'numeric', month:'short'});
+const keyOf = e => [e.dest_id, e.flight.out_date, e.flight.ret_date, e.flight.dest_airport].join('|');
+const LS = 'trailboard.saved.v1';
+
+let data = {estimates: [], deals: {}, generated_at: null};
+let saved = JSON.parse(localStorage.getItem(LS) || '[]');
+
+function persist(){ localStorage.setItem(LS, JSON.stringify(saved)); $('#savedCount').textContent = saved.length ? `(${saved.length})` : ''; }
+function toast(msg){ const t = $('#toast'); t.textContent = msg; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 1800); }
+function isSaved(k){ return saved.some(s => s.key === k); }
+
+function toggleSave(e){
+  const k = keyOf(e);
+  if (isSaved(k)) { saved = saved.filter(s => s.key !== k); toast('Removed from saved'); }
+  else { saved.push({key: k, saved_at: new Date().toISOString().slice(0,10), total_then: e.total, flight_then: e.flight.verified_price ?? e.flight.price}); toast('Saved'); }
+  persist(); render();
+}
+
+function linksHtml(l){
+  const order = [['flight','Book flight'],['google_flights','Google Flights'],['hostelworld','Hostelworld'],['hostelz','Hostelz'],['booking_hostels','Booking hostels'],['transit','Rome2Rio']];
+  let h = order.filter(([k]) => l[k]).map(([k,t]) => `<a href="${l[k]}" target="_blank" rel="noopener">${t}</a>`).join('');
+  h += Object.entries(l).filter(([k]) => k.startsWith('transit: ')).map(([k,v]) => `<a href="${v}" target="_blank" rel="noopener">${k.slice(9)}</a>`).join('');
+  return h;
+}
+
+function row(e, extra=''){
+  const f = e.flight, k = keyOf(e), why = data.deals[k];
+  const price = f.verified_price ?? f.price;
+  const cls = (why ? 'deal ' : '') + (e.in_season ? '' : 'off');
+  const note = [...e.flags, e.closure_note].filter(Boolean).join(' – ');
+  return `<tr class="${cls}">
+    <td><div class="name">${e.name}</div><div class="meta">${e.country}${note ? ' · ' + note : ''}</div>${why ? `<div class="why">${why.join('; ')}</div>` : ''}${extra}</td>
+    <td>${fmt(f.out_date)} – ${fmt(f.ret_date)}<div class="meta">${f.origin}→${f.dest_airport} · ${f.airline} · ${(f.ret_date>f.out_date)?Math.round((new Date(f.ret_date)-new Date(f.out_date))/864e5):''} nights</div></td>
+    <td class="num">${eur(price)}<div class="meta">${f.verified ? 'Google ✔' : f.source}</div></td>
+    <td class="num hide-m">${eur(e.bag)}</td>
+    <td class="num hide-m">${eur(e.transit)}</td>
+    <td class="num hide-m">${eur(e.hostel_total)}<div class="meta">${eur(e.hostel_per_night)}/n</div></td>
+    <td class="num hide-m">${eur(e.extras)}</td>
+    <td class="num"><strong>${eur(e.total)}</strong></td>
+    <td><button class="star" data-key="${k}" aria-pressed="${isSaved(k)}">${isSaved(k) ? 'Saved' : 'Save'}</button><div class="links">${linksHtml(e.links)}</div></td>
+  </tr>`;
+}
+const head = `<thead><tr><th>Trip</th><th>Dates</th><th class="num">Flight</th><th class="num hide-m">Bag</th><th class="num hide-m">Transit</th><th class="num hide-m">Hostel</th><th class="num hide-m">Extras</th><th class="num">All-in</th><th></th></tr></thead>`;
+
+function renderLatest(){
+  const q = $('#q').value.trim().toLowerCase(), onlyDeals = $('#onlyDeals').checked, showOff = $('#showOff').checked;
+  let rows = data.estimates.filter(e => (showOff || e.in_season) && (!onlyDeals || data.deals[keyOf(e)]) &&
+    (!q || (e.name + ' ' + e.country).toLowerCase().includes(q)));
+  rows.sort((a,b) => (a.in_season===b.in_season ? a.total-b.total : a.in_season ? -1 : 1));
+  $('#latestTable').innerHTML = rows.length ? `<table>${head}<tbody>${rows.map(r => row(r)).join('')}</tbody></table>`
+    : `<div class="empty">Nothing matches. Clear the filter, or tick "include out-of-season".</div>`;
+}
+
+function renderSaved(){
+  const byKey = Object.fromEntries(data.estimates.map(e => [keyOf(e), e]));
+  const rows = saved.map(s => {
+    const live = byKey[s.key];
+    if (live) {
+      const diff = live.total - s.total_then;
+      const tag = diff === 0 ? 'unchanged' : (diff < 0 ? `down ${eur(-diff)}` : `up ${eur(diff)}`);
+      return row(live, `<div class="meta">Saved ${s.saved_at} at ${eur(s.total_then)} all-in · now ${tag}</div>`);
+    }
+    const [dest_id, out, ret, ap] = s.key.split('|');
+    return `<tr class="off"><td><div class="name">${dest_id}</div><div class="meta">Saved ${s.saved_at} at ${eur(s.total_then)} all-in · no longer in the latest scan (dates passed or fare gone)</div></td>
+      <td>${fmt(out)} – ${fmt(ret)}<div class="meta">→${ap}</div></td><td class="num">${eur(s.flight_then)}</td><td class="hide-m"></td><td class="hide-m"></td><td class="hide-m"></td><td class="hide-m"></td><td class="num"><strong>${eur(s.total_then)}</strong></td>
+      <td><button class="star" data-key="${s.key}" aria-pressed="true">Saved</button></td></tr>`;
+  });
+  $('#savedTable').innerHTML = rows.length ? `<table>${head}<tbody>${rows.join('')}</tbody></table>`
+    : `<div class="empty">No saved trips yet. Press Save on anything in Latest, or open a Save link from the tracker email, and it will appear here.</div>`;
+}
+
+function render(){ renderLatest(); renderSaved(); }
+
+document.addEventListener('click', ev => {
+  const b = ev.target.closest('button.star');
+  if (!b) return;
+  const k = b.dataset.key, e = data.estimates.find(x => keyOf(x) === k);
+  if (e) toggleSave(e); else { saved = saved.filter(s => s.key !== k); persist(); render(); toast('Removed'); }
+});
+document.querySelectorAll('nav button').forEach(b => b.addEventListener('click', () => showTab(b.dataset.tab)));
+function showTab(t){
+  document.querySelectorAll('nav button').forEach(b => b.setAttribute('aria-selected', b.dataset.tab === t));
+  $('#latest').hidden = t !== 'latest'; $('#saved').hidden = t !== 'saved';
+}
+['#q','#onlyDeals','#showOff'].forEach(s => $(s).addEventListener('input', renderLatest));
+
+$('#share').addEventListener('click', async () => {
+  const payload = btoa(unescape(encodeURIComponent(JSON.stringify(saved))));
+  const url = location.origin + location.pathname + '#s=' + payload;
+  try { await navigator.clipboard.writeText(url); toast('Share link copied'); }
+  catch { $('#shareHint').innerHTML = `<a href="${url}">Right-click to copy this link</a>`; }
+});
+$('#export').addEventListener('click', () => {
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(saved, null, 1)], {type:'application/json'}));
+  a.download = 'saved.json'; a.click();
+});
+$('#clear').addEventListener('click', () => { if (confirm('Remove all saved trips from this browser?')) { saved = []; persist(); render(); } });
+
+function applyHash(){
+  const h = new URLSearchParams(location.hash.slice(1));
+  if (h.get('save')) {
+    const k = h.get('save'), e = data.estimates.find(x => keyOf(x) === k);
+    if (e && !isSaved(k)) toggleSave(e); else if (!e) toast('That trip is not in the latest scan any more');
+    showTab('saved');
+  }
+  if (h.get('s')) {
+    try {
+      const incoming = JSON.parse(decodeURIComponent(escape(atob(h.get('s')))));
+      let n = 0;
+      for (const s of incoming) if (!isSaved(s.key)) { saved.push(s); n++; }
+      persist(); toast(n ? `Added ${n} shared trip${n>1?'s':''}` : 'Shared trips already on your board');
+      showTab('saved');
+    } catch { toast('Share link could not be read'); }
+  }
+  history.replaceState(null, '', location.pathname);
+}
+
+(async () => {
+  try {
+    const r = await fetch('data.json?t=' + Date.now());
+    data = await r.json();
+    data.deals = data.deals || {};
+  } catch { $('#sub').textContent = 'No scan data yet – run the tracker once and it will appear here.'; render(); return; }
+  const best = data.estimates.filter(e => e.in_season).sort((a,b) => a.total-b.total)[0];
+  $('#sub').textContent = `Last scan ${new Date(data.generated_at).toLocaleString('en-GB')} · ${data.estimates.length} trip options · ${Object.keys(data.deals).length} deals`;
+  if (best) $('#hero').innerHTML = `Cheapest in-season trip right now: <b>${best.name.split(' –')[0]}</b>, ${fmt(best.flight.out_date)}–${fmt(best.flight.ret_date)}, ${eur(best.total)} all-in.`;
+  persist(); render(); applyHash();
+})();
+</script>
+</body>
+</html>

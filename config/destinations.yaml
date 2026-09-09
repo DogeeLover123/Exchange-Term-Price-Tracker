@@ -1,0 +1,432 @@
+# Each destination = one "trip idea". The tracker searches flights to every airport
+# listed, adds the transit recipe + hostel baseline, and checks the season window.
+#
+# Fields:
+#   id            unique slug
+#   name          what shows in the email
+#   country
+#   airports      IATA codes to search (first = preferred)
+#   open_months   months the trip is sensible (1-12). Outside -> excluded from alerts.
+#   closure_note  human note about huts/lifts/roads (shown in email)
+#   hostel        city + per_night baseline (EUR, dorm bed) + optional search hint
+#   transit       list of ground legs. cost = ROUND TRIP total in EUR.
+#   extras        optional fixed costs (lifts, park fees) round-trip
+#   alert_below   optional per-destination override of alert.total_below
+#   notes         free text
+
+# =============================== PORTUGAL ===============================
+- id: madeira
+  name: "Madeira – Pico do Arieiro→Pico Ruivo, levadas"
+  country: Portugal
+  airports: [FNC]
+  open_months: [9, 10, 11, 12]
+  closure_note: "Year-round. Best value Nov–Dec when the Alps are shut."
+  hostel: {city: Funchal, per_night: 22}
+  transit:
+    - {name: "Aerobus FNC→Funchal", cost: 10, link: "https://www.sam.pt/en/aerobus"}
+    - {name: "Bolt/shared taxi to Pico do Arieiro + Levada buses", cost: 30}
+  notes: "Ridge hike is one-way; taxi back from Achada do Teixeira."
+
+- id: azores_saomiguel
+  name: "Azores – São Miguel (Sete Cidades, Lagoa do Fogo)"
+  country: Portugal
+  airports: [PDL]
+  open_months: [9, 10]
+  closure_note: "Fine Sept–Oct, rainy/foggy Nov–Dec."
+  hostel: {city: "Ponta Delgada", per_night: 25}
+  transit:
+    - {name: "Airport→town walk/taxi", cost: 10}
+    - {name: "Car share/bus to trailheads (buses sparse)", cost: 40}
+  notes: "Consider a shared rental with hostel-mates; buses are thin."
+
+- id: geres
+  name: "Peneda-Gerês National Park"
+  country: Portugal
+  airports: [OPO]
+  open_months: [9, 10]
+  hostel: {city: "Gerês", per_night: 25}
+  transit:
+    - {name: "Metro OPO→Porto", cost: 6}
+    - {name: "Transdev bus Porto→Gerês (Vila do Gerês)", cost: 20, link: "https://www.transdev.pt"}
+  notes: "Madrid→Porto by ALSA bus (~€20, 8h) is a valid alternative to flying."
+
+- id: serra_estrela
+  name: "Serra da Estrela"
+  country: Portugal
+  airports: [OPO, LIS]
+  open_months: [10, 11, 12]
+  closure_note: "Snow possible in Dec – can be a bonus."
+  hostel: {city: Manteigas, per_night: 25}
+  transit:
+    - {name: "Rede Expressos bus Porto/Lisbon→Covilhã", cost: 36, link: "https://rede-expressos.pt"}
+    - {name: "Local bus/taxi Covilhã→Manteigas/Torre", cost: 20}
+  notes: "Also reachable Madrid→Covilhã by bus without flying."
+
+- id: rota_vicentina
+  name: "Rota Vicentina – Fishermen's Trail (cliff walk)"
+  country: Portugal
+  airports: [LIS, FAO]
+  open_months: [10, 11, 12]
+  hostel: {city: "Vila Nova de Milfontes", per_night: 25}
+  transit:
+    - {name: "Rede Expressos Lisbon→Milfontes/Odeceixe", cost: 40, link: "https://rede-expressos.pt"}
+  notes: "Multi-day, luggage transfer not needed if packing light."
+
+# =============================== MOROCCO ================================
+- id: toubkal
+  name: "High Atlas – Imlil & Jebel Toubkal"
+  country: Morocco
+  airports: [RAK]
+  open_months: [9, 10, 11]
+  closure_note: "Dec needs crampons + guide (snow). Refuges provide bunks."
+  hostel: {city: Imlil, per_night: 15}
+  transit:
+    - {name: "Bus 19 RAK→Marrakech centre", cost: 6}
+    - {name: "Grand taxi Marrakech→Imlil (shared)", cost: 12}
+  extras: {name: "Toubkal refuge x2 nights + guide share", cost: 70}
+  notes: "Guide mandatory since 2019 checkpoint."
+
+- id: ait_bouguemez
+  name: "Aït Bouguemez valley & M'Goun"
+  country: Morocco
+  airports: [RAK]
+  open_months: [9, 10, 11]
+  hostel: {city: "Aït Bouguemez", per_night: 20}
+  transit:
+    - {name: "Bus RAK→Marrakech + bus/grand taxi to Azilal→Tabant", cost: 30}
+  notes: "Gîtes include dinner; very few tourists."
+
+- id: todra_dades
+  name: "Todra & Dadès Gorges"
+  country: Morocco
+  airports: [RAK, OZZ]
+  open_months: [10, 11, 12]
+  hostel: {city: Tinghir, per_night: 15}
+  transit:
+    - {name: "CTM/Supratours bus Marrakech→Tinghir (return)", cost: 40, link: "https://www.ctm.ma"}
+  notes: "Long bus day each way; combine with Merzouga."
+
+- id: chefchaouen_rif
+  name: "Rif – Chefchaouen, Akchour waterfalls, Talassemtane"
+  country: Morocco
+  airports: [TNG, FEZ]
+  open_months: [9, 10, 11, 12]
+  hostel: {city: Chefchaouen, per_night: 12}
+  transit:
+    - {name: "CTM bus Tangier→Chefchaouen (return)", cost: 16, link: "https://www.ctm.ma"}
+    - {name: "Grand taxi Chefchaouen→Akchour (return)", cost: 8}
+  notes: "No-fly option: bus Madrid→Algeciras + ferry to Tangier (~€60 rt)."
+
+- id: merzouga
+  name: "Erg Chebbi dunes – Merzouga"
+  country: Morocco
+  airports: [FEZ, RAK, ERH]
+  open_months: [10, 11, 12]
+  hostel: {city: Merzouga, per_night: 15}
+  transit:
+    - {name: "Supratours bus Fes→Merzouga (return)", cost: 40}
+  extras: {name: "Desert camp night (bedding included)", cost: 35}
+
+# ================================ FRANCE ================================
+- id: gavarnie_pyrenees
+  name: "Pyrenees – Gavarnie cirque, Cauterets, Néouvielle"
+  country: France
+  airports: [TLS, LDE, PUF]
+  open_months: [9, 10]
+  closure_note: "Snow from late Oct; refuges close early Oct."
+  hostel: {city: Gavarnie, per_night: 30}
+  transit:
+    - {name: "Train Toulouse→Lourdes + bus 965 to Gavarnie (return)", cost: 45, link: "https://www.sncf-connect.com"}
+  notes: "No-fly: train Madrid→Zaragoza→Canfranc or bus to Lourdes."
+
+- id: chamonix
+  name: "Chamonix – Lac Blanc, Mont Blanc balcony trails"
+  country: France
+  airports: [GVA]
+  open_months: [9, 10]
+  closure_note: "Huts close end Sept; lifts wind down mid-Oct."
+  hostel: {city: Chamonix, per_night: 40}
+  transit:
+    - {name: "FlixBus/BlaBlaCar Bus GVA→Chamonix (return)", cost: 40, link: "https://global.flixbus.com"}
+  extras: {name: "Flégère lift", cost: 35}
+
+- id: ecrins_vercors
+  name: "Écrins / Vercors (Grenoble)"
+  country: France
+  airports: [LYS, GNB]
+  open_months: [9, 10]
+  hostel: {city: Grenoble, per_night: 30}
+  transit:
+    - {name: "Bus LYS→Grenoble + regional bus to La Bérarde/Vercors (return)", cost: 50}
+
+- id: verdon
+  name: "Gorges du Verdon"
+  country: France
+  airports: [MRS, NCE]
+  open_months: [9, 10]
+  hostel: {city: "Castellane", per_night: 30}
+  transit:
+    - {name: "Zou! bus Marseille/Nice→Castellane (return)", cost: 30, link: "https://zou.maregionsud.fr"}
+  notes: "Buses are seasonal and sparse – check Zou! timetable."
+
+- id: calanques
+  name: "Calanques (Marseille)"
+  country: France
+  airports: [MRS]
+  open_months: [10, 11, 12]
+  closure_note: "Fire-risk closures end in Oct; perfect autumn–winter."
+  hostel: {city: Marseille, per_night: 28}
+  transit:
+    - {name: "Shuttle MRS→Marseille + metro/bus to Luminy/Cassis", cost: 25}
+
+# ============================== SWITZERLAND =============================
+- id: lauterbrunnen
+  name: "Lauterbrunnen / Grindelwald / Jungfrau"
+  country: Switzerland
+  airports: [BSL, ZRH, GVA]
+  open_months: [9, 10, 12]
+  closure_note: "Golden Sept–Oct; Nov is dead season (many lifts shut); Dec snowy but scenic."
+  hostel: {city: Lauterbrunnen, per_night: 55}
+  transit:
+    - {name: "SBB Saver Day Pass (Basel→Lauterbrunnen & back)", cost: 78, link: "https://www.sbb.ch/en/tickets-offers/tickets/saver-day-pass.html"}
+  extras: {name: "Grütschalp/First lift", cost: 40}
+  alert_below: 220
+
+- id: zermatt
+  name: "Zermatt – Five Lakes, Gornergrat"
+  country: Switzerland
+  airports: [GVA, ZRH, BSL]
+  open_months: [9, 10]
+  hostel: {city: Zermatt, per_night: 60}
+  transit:
+    - {name: "SBB Saver Day Pass x2", cost: 100, link: "https://www.sbb.ch/en/tickets-offers/tickets/saver-day-pass.html"}
+  extras: {name: "Sunnegga/Blauherd lift", cost: 45}
+  alert_below: 220
+
+- id: oeschinensee
+  name: "Oeschinensee / Kandersteg"
+  country: Switzerland
+  airports: [BSL, ZRH, GVA]
+  open_months: [9, 10]
+  hostel: {city: Kandersteg, per_night: 50}
+  transit:
+    - {name: "SBB Saver Day Pass", cost: 78}
+  extras: {name: "Oeschinen gondola", cost: 30}
+  alert_below: 220
+
+- id: appenzell
+  name: "Appenzell – Ebenalp, Seealpsee"
+  country: Switzerland
+  airports: [ZRH, BSL]
+  open_months: [9, 10]
+  hostel: {city: Appenzell, per_night: 50}
+  transit:
+    - {name: "Train Zurich→Wasserauen (return)", cost: 50}
+  alert_below: 220
+
+- id: ticino
+  name: "Ticino – Verzasca & Maggia valleys"
+  country: Switzerland
+  airports: [BGY, MXP, ZRH]
+  open_months: [9, 10]
+  hostel: {city: Locarno, per_night: 40}
+  transit:
+    - {name: "Bus BGY→Milano Centrale + train Milan→Locarno + PostBus (return)", cost: 50}
+  notes: "Cheapest way into Switzerland: fly Bergamo."
+
+# ================================ AUSTRIA ===============================
+- id: hallstatt_dachstein
+  name: "Hallstatt / Dachstein (5 Fingers, Gosausee)"
+  country: Austria
+  airports: [SZG, VIE, MUC]
+  open_months: [9, 10]
+  closure_note: "Dachstein lifts run to late Oct."
+  hostel: {city: Hallstatt, per_night: 35}
+  transit:
+    - {name: "Train Salzburg→Hallstatt via Attnang (return)", cost: 40, link: "https://www.oebb.at"}
+  extras: {name: "Dachstein Krippenstein cable car", cost: 38}
+
+- id: innsbruck_stubai
+  name: "Innsbruck – Nordkette, Stubai"
+  country: Austria
+  airports: [INN, MUC]
+  open_months: [9, 10, 11, 12]
+  closure_note: "Autumn hiking to Oct; Dec = snow walking / Nordkette open."
+  hostel: {city: Innsbruck, per_night: 30}
+  transit:
+    - {name: "Bus F airport→centre + Stubai bus (return)", cost: 20}
+
+- id: zell_am_see
+  name: "Zell am See / Kaprun"
+  country: Austria
+  airports: [SZG, MUC]
+  open_months: [9, 10]
+  hostel: {city: "Zell am See", per_night: 35}
+  transit:
+    - {name: "Train Salzburg→Zell am See (return)", cost: 40, link: "https://www.oebb.at"}
+
+- id: zillertal
+  name: "Zillertal"
+  country: Austria
+  airports: [INN, MUC]
+  open_months: [9, 10]
+  hostel: {city: Mayrhofen, per_night: 35}
+  transit:
+    - {name: "Train Innsbruck→Jenbach→Mayrhofen (return)", cost: 30}
+
+# ================================= ITALY ================================
+- id: dolomites
+  name: "Dolomites – Tre Cime, Seceda, Alpe di Siusi, Braies"
+  country: Italy
+  airports: [VCE, TSF, INN, VRN, BGY]
+  open_months: [9, 10]
+  closure_note: "Huts & shuttle buses stop mid-Oct; lifts close ~early Oct."
+  hostel: {city: Cortina, per_night: 35}
+  transit:
+    - {name: "Cortina Express / FlixBus Venice→Cortina (return)", cost: 40, link: "https://www.cortinaexpress.it"}
+    - {name: "Local buses to Tre Cime / Braies", cost: 30}
+  extras: {name: "Seceda/Ortisei lift", cost: 40}
+
+- id: gran_paradiso
+  name: "Gran Paradiso / Aosta Valley"
+  country: Italy
+  airports: [TRN, MXP, BGY]
+  open_months: [9, 10]
+  hostel: {city: Aosta, per_night: 30}
+  transit:
+    - {name: "Bus Turin→Aosta + valley bus (return)", cost: 40}
+
+- id: lake_como
+  name: "Lake Como / Garda ridge hikes"
+  country: Italy
+  airports: [BGY, MXP]
+  open_months: [9, 10, 11]
+  hostel: {city: Como, per_night: 30}
+  transit:
+    - {name: "Bus BGY→Milan + train Milan→Varenna/Como (return)", cost: 30}
+
+- id: cinque_terre
+  name: "Cinque Terre coastal trail"
+  country: Italy
+  airports: [PSA, GOA]
+  open_months: [10, 11]
+  closure_note: "Trail card needed; some sections close after storms."
+  hostel: {city: "La Spezia", per_night: 30}
+  transit:
+    - {name: "Train Pisa→La Spezia + Cinque Terre card (return)", cost: 45}
+
+- id: amalfi_path_of_gods
+  name: "Amalfi – Path of the Gods"
+  country: Italy
+  airports: [NAP]
+  open_months: [10, 11]
+  hostel: {city: Sorrento, per_night: 30}
+  transit:
+    - {name: "Circumvesuviana/Sita buses (return)", cost: 20}
+
+- id: etna
+  name: "Etna (Sicily)"
+  country: Italy
+  airports: [CTA]
+  open_months: [10, 11, 12]
+  hostel: {city: Catania, per_night: 22}
+  transit:
+    - {name: "AST bus Catania→Rifugio Sapienza (return)", cost: 14}
+  extras: {name: "Cable car (optional)", cost: 35}
+
+- id: sardinia_gorropu
+  name: "Sardinia – Gola di Gorropu, Supramonte"
+  country: Italy
+  airports: [CAG, OLB, AHO]
+  open_months: [9, 10]
+  hostel: {city: Dorgali, per_night: 28}
+  transit:
+    - {name: "ARST bus airport→Dorgali/Urzulei (return)", cost: 30}
+  notes: "Buses thin – pair with hostel-mates for a rental."
+
+# ============================== NETHERLANDS =============================
+- id: hoge_veluwe
+  name: "Hoge Veluwe NP (free bikes)"
+  country: Netherlands
+  airports: [EIN, AMS]
+  open_months: [9, 10, 11]
+  hostel: {city: Arnhem, per_night: 30}
+  transit:
+    - {name: "Train EIN→Arnhem + bus 105 (return)", cost: 40, link: "https://www.ns.nl"}
+  extras: {name: "Park entry", cost: 13}
+
+- id: kennemerland
+  name: "Zuid-Kennemerland dunes + Kinderdijk"
+  country: Netherlands
+  airports: [AMS, EIN]
+  open_months: [9, 10, 11]
+  hostel: {city: Haarlem, per_night: 32}
+  transit:
+    - {name: "Trains (return)", cost: 30}
+
+- id: ardennes_high_fens
+  name: "Belgian Ardennes & High Fens (via Eindhoven)"
+  country: Netherlands
+  airports: [EIN, MST, BRU, CRL]
+  open_months: [9, 10, 11]
+  hostel: {city: Eupen, per_night: 30}
+  transit:
+    - {name: "FlixBus/train Eindhoven→Liège→Eupen (return)", cost: 45}
+
+- id: mullerthal
+  name: "Luxembourg – Mullerthal Trail"
+  country: Netherlands
+  airports: [LUX, EIN, CRL]
+  open_months: [9, 10, 11]
+  hostel: {city: Echternach, per_night: 28}
+  transit:
+    - {name: "Luxembourg public transport is FREE", cost: 0}
+    - {name: "Bus from Eindhoven if flying EIN (return)", cost: 40}
+
+# =============================== BULGARIA ===============================
+- id: rila_seven_lakes
+  name: "Rila – Seven Lakes, Musala, Rila Monastery"
+  country: Bulgaria
+  airports: [SOF]
+  open_months: [9, 10]
+  closure_note: "Chairlift & huts close / snow from Nov."
+  hostel: {city: Sofia, per_night: 15}
+  transit:
+    - {name: "Bus Sofia→Sapareva Banya/Borovets (return)", cost: 15}
+  extras: {name: "Chairlift + hut night", cost: 30}
+
+- id: pirin_vihren
+  name: "Pirin – Vihren, Koncheto, Bansko"
+  country: Bulgaria
+  airports: [SOF]
+  open_months: [9, 10]
+  hostel: {city: Bansko, per_night: 15}
+  transit:
+    - {name: "Bus Sofia→Bansko + taxi to Vihren hut (return)", cost: 25}
+
+- id: rhodopes
+  name: "Rhodopes – Trigrad, Wonderful Bridges, Devil's Throat"
+  country: Bulgaria
+  airports: [SOF, PDV]
+  open_months: [9, 10, 11]
+  hostel: {city: Plovdiv, per_night: 14}
+  transit:
+    - {name: "Bus Sofia→Plovdiv→Devin/Trigrad (return)", cost: 25}
+
+- id: central_balkan
+  name: "Central Balkan – Botev, Buzludzha, Belogradchik"
+  country: Bulgaria
+  airports: [SOF]
+  open_months: [9, 10]
+  hostel: {city: "Veliko Tarnovo", per_night: 14}
+  transit:
+    - {name: "Buses Sofia↔Kalofer/Kazanlak (return)", cost: 25}
+
+- id: vitosha
+  name: "Vitosha (Sofia day hikes)"
+  country: Bulgaria
+  airports: [SOF]
+  open_months: [9, 10, 11, 12]
+  hostel: {city: Sofia, per_night: 15}
+  transit:
+    - {name: "Metro + bus 66/93 (return)", cost: 5}
