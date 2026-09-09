@@ -20,12 +20,15 @@ def save_link(e: TripEstimate) -> str | None:
     return f"{base}/#save={trip_key(e)}" if base else None
 
 
-def write(estimates: list[TripEstimate], deals: list[tuple[TripEstimate, list[str]]]) -> None:
+def write(estimates: list[TripEstimate], deals: list[tuple[TripEstimate, list[str]]], chains=None,
+          window: dict | None = None) -> None:
     DOCS.mkdir(exist_ok=True)
     payload = {
         "generated_at": datetime.utcnow().isoformat() + "Z",
+        "window": window,
         "estimates": [e.to_dict() for e in estimates],
         "deals": {trip_key(e): reasons for e, reasons in deals},
+        "chains": [c.to_dict() for c in (chains or [])],
     }
     with open(DOCS / "data.json", "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False)

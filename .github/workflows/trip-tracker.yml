@@ -22,6 +22,11 @@ on:
         description: "Exact trip dates instead of the window, e.g. 'Oct 3-10' or '2026-10-03:2026-10-10' (comma-separate several)"
         required: false
         default: ""
+      chain:
+        description: "Also build multi-city itineraries from one-way fares (needs a window of ≤ 21 days)"
+        type: boolean
+        required: false
+        default: false
       force_verify:
         description: "Google-verify every in-season trip (uses SerpApi quota)"
         type: boolean
@@ -63,12 +68,14 @@ jobs:
           IN_DATE_TO: ${{ inputs.date_to }}
           IN_DATES: ${{ inputs.dates }}
           IN_FORCE_VERIFY: ${{ inputs.force_verify }}
+          IN_CHAIN: ${{ inputs.chain }}
         run: |
           ARGS=""
           [ -n "$IN_COUNTRIES" ] && ARGS="$ARGS --countries $IN_COUNTRIES"
           [ -n "$IN_DATE_FROM" ] && ARGS="$ARGS --from $IN_DATE_FROM"
           [ -n "$IN_DATE_TO" ] && ARGS="$ARGS --to $IN_DATE_TO"
           [ "$IN_FORCE_VERIFY" = "true" ] && ARGS="$ARGS --force-verify"
+          [ "$IN_CHAIN" = "true" ] && ARGS="$ARGS --chain"
           if [ -n "$IN_DATES" ]; then
             python -m tracker.run $ARGS --dates "$IN_DATES"
           else

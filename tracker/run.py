@@ -6,7 +6,7 @@ import logging
 import sys
 from datetime import date, datetime
 
-from . import dashboard
+from . import chain as chain_mod, dashboard
 from .models import (FlightQuote, format_date_ranges, google_flights_link, load_destinations, load_settings,
                      parse_date_ranges)
 from .notify import build_email, send_email
@@ -136,6 +136,8 @@ def main(argv=None):
     ap.add_argument("--dates", help="exact trip dates instead of a window, e.g. 'Oct 3-10' or "
                                     "'2026-10-03:2026-10-10'; several comma-separated (overrides settings)")
     ap.add_argument("--force-verify", action="store_true", help="verify every in-season destination (uses quota!)")
+    ap.add_argument("--chain", action="store_true", help="also build multi-city itineraries from one-way fares "
+                                                        "(window must be ≤ chain.max_window_days)")
     args = ap.parse_args(argv)
 
     settings = load_settings()
@@ -207,21 +209,33 @@ def main(argv=None):
         cheapest.setdefault(e.dest_id, e)          # first = best in-season, else best overall
     ranked = list(cheapest.values())
 
+    # 3b. multi-city chains from one-way fares (short windows only)
+    chains = []
+    if args.chain or (settings.get("chain") or {}).get("enabled"):
+        chains = chain_mod.run_chains(dests, settings, stats)
+        for it in chains:
+            log.info("chain €%.0f %s %s→%s: %s", it.total, it.route, it.legs[0].day, it.legs[-1].day,
+                     " | ".join(f"{s.name.split(' –')[0]} {s.nights}n" for s in it.stops))
+
     # 4. persist
     if not args.dry_run:
         history["runs"].append({"at": datetime.utcnow().isoformat(), "mode": "fixed" if ranges else "window",
                                 "dates": format_date_ranges(ranges) if ranges else None,
-                                "estimates": [e.to_dict() for e in estimates]})
+                                "estimates": [e.to_dict() for e in estimates],
+                                "chains": [c.to_dict() for c in chains]})
         history["runs"] = history["runs"][-90:]
         save_history(history)
-        dashboard.write(estimates, deals)
+        dashboard.write(estimates, deals, chains, settings["search_window"])
 
     # 5. notify
-    subject, body = build_email(deals, ranked, quota, stats)
+    subject, body = build_email(deals, ranked, quota, stats, chains)
     log.info("subject: %s", subject)
     if args.dry_run or args.no_email:
         print("\n".join(f"{e.total:7.0f}  {e.name}  [{e.flight.out_date}→{e.flight.ret_date} {e.flight.source}]"
                         + ("  " + "; ".join(r) if r else "") for e, r in ([(e, []) for e in ranked])))
+        for it in chains:
+            print(f"{it.total:7.0f}  🔗 {it.route}  [{it.legs[0].day}→{it.legs[-1].day}]  "
+                  + " | ".join(f"{s.name.split(' –')[0]} {s.nights}n" for s in it.stops))
         return 0
     if deals or alert.get("digest_always"):
         send_email(subject, body)

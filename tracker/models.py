@@ -186,3 +186,15 @@ def parse_date_ranges(spec, today: Optional[date] = None) -> list[tuple[date, da
 
 def format_date_ranges(ranges: list[tuple[date, date]]) -> str:
     return ", ".join(f"{a:%d %b} → {b:%d %b} ({(b - a).days}n)" for a, b in ranges)
+
+
+def ryanair_oneway_link(origin: str, dest: str, out: date) -> str:
+    return (
+        "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false"
+        f"&dateOut={out.isoformat()}&originIata={origin}&destinationIata={dest}"
+    )
+
+
+def google_oneway_link(origin: str, dest: str, out: date) -> str:
+    q = f"One way flights from {origin} to {dest} on {out.isoformat()}"
+    return "https://www.google.com/travel/flights?q=" + quote_plus(q)

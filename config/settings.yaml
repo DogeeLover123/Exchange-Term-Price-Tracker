@@ -42,6 +42,21 @@ alert:
                                   # Ryanair/Travelpayouts have no price for on those exact days
   min_serpapi_searches_left: 20   # keep this much quota in reserve per key
 
+# ---- Multi-city chains (one-way fares) -------------------------------------
+# Itineraries like MAD → Tangier → Marrakech → MAD built from one-way fares, so one trip covers
+# several places. Every airport is scanned for every day of the window, so this only runs on short
+# windows (max_window_days) – set them with --from/--to, --dates, or the run form. Enable per run
+# with --chain / the "chain" box, or permanently here.
+chain:
+  enabled: false
+  min_stops: 2                    # places visited per itinerary (1 = a round trip built from one-ways)
+  max_stops: 3
+  nights_per_stop: {min: 2, max: 5}
+  max_window_days: 21             # refuse (and skip) longer windows – the scan is airports × days calls
+  max_leg_price: 250              # ignore one-way legs above this (EUR)
+  top: 10                         # unique routes to report
+  threads: 4                      # parallel Ryanair fare-finder calls
+
 # ---- Data sources ---------------------------------------------------------
 sources:
   ryanair: true                   # free, unofficial, exact base fares

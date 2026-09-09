@@ -85,7 +85,7 @@ python -m tracker.run --force-verify   # Google-check every in-season trip (burn
 - **Every 2 days at 08:00 Madrid** an email arrives: a 🔥 deals table (if any) and the full ranking,
   each row with Book flight / Google Flights / Hostelworld / Hostelz / Booking / Rome2Rio / ★ Save links.
 - **Want a run now?** GitHub → Actions → trip-tracker → Run workflow. Optional boxes: limit to some
-  countries, set a date window (from/to), price **exact dates** (e.g. `Oct 3-10`), or "force verify" everything on
+  countries, set a date window (from/to), price **exact dates**, tick **chain** for multi-city routes, (e.g. `Oct 3-10`), or "force verify" everything on
   Google (uses quota).
 - **Found something good?** Click ★ Save in the email (or Save on the board). It's in the Saved tab
   with the price you saw; the next scans tell you if it's moved.
@@ -159,6 +159,27 @@ cache of other people's searches, so it is often empty for a specific pair. Dest
 source can price are looked up on Google Flights, up to `alert.google_fill_fixed_dates` per run
 (default 15, in-season first) so a full 40-destination run doesn't drain the free SerpApi quota. Narrow
 with `--countries` or `--only` when you want every destination priced on your dates.
+
+## Multi-city chains (one-way fares: Madrid → A → B → Madrid)
+
+A round trip is two one-ways, so chaining cheap one-way hops often beats flying home in between and
+lets you see several places in one trip. Chain mode scans every airport in `destinations.yaml` for
+every day of the window (Ryanair fare-finder, one call per airport-day; Travelpayouts for the Madrid
+legs), then searches itineraries that leave Madrid, sleep 2–5 nights per stop, never repeat a place,
+and land back in Madrid before the window ends. Each is costed like a single trip: flights + half a
+bag per leg + hostel × nights + transit + extras per stop. The cheapest unique routes (in-season
+first) go to a 🔗 section of the email, a Chains tab on the trail board, and `history.json`.
+
+```bash
+python -m tracker.run --chain --from 2026-09-15 --to 2026-09-22     # "I'm free Sep 15-22"
+python -m tracker.run --chain --dates "Oct 3-10"                    # same, exact-dates style window
+```
+
+On GitHub: Run workflow → set from/to (or dates) → tick **chain**. Permanent: `chain.enabled: true`
+in `settings.yaml` (then keep `search_window` short). The scan is airports × days, so windows longer
+than `chain.max_window_days` (21) are skipped with a warning. Knobs: `min_stops`/`max_stops`,
+`nights_per_stop`, `max_leg_price`, `top`. Each leg is a separate ticket – no protection if the
+first flight is late, so leave a real gap between legs.
 
 ## Tuning
 

@@ -45,6 +45,8 @@ td.num,th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-n
 .star[aria-pressed=true]{background:var(--spruce);color:#fff;border-color:var(--spruce)}
 .empty{padding:40px 0;color:var(--mute);max-width:60ch}
 .note{font-size:13px;color:var(--mute);margin-top:18px}
+.legs a{white-space:nowrap}
+.stop{margin:0 0 4px}
 .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;opacity:0;transition:opacity .2s}
 .toast.show{opacity:1}
 @media(max-width:800px){.hide-m{display:none}h1{font-size:24px}.hero{font-size:18px}}
@@ -62,6 +64,7 @@ td.num,th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-n
   </svg>
   <nav role="tablist">
     <button role="tab" aria-selected="true" data-tab="latest">Latest</button>
+    <button role="tab" aria-selected="false" data-tab="chains">Chains <span id="chainCount"></span></button>
     <button role="tab" aria-selected="false" data-tab="saved">Saved <span id="savedCount"></span></button>
   </nav>
 </header>
@@ -74,6 +77,10 @@ td.num,th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-n
     </div>
     <div id="latestTable"></div>
     <p class="note">Flight prices are live from the last scan; hostel and transit are estimates. Grey rows are outside the sensible season. Saved trips are kept in this browser, so save on the device you'll use.</p>
+  </section>
+  <section id="chains" hidden>
+    <div id="chainsTable"></div>
+    <p class="note">Multi-city itineraries built from one-way fares: leave Madrid, sleep 2–5 nights at each stop, come back before the window ends. Each leg is a separate ticket – book every link. Ground = hostel × nights + transit + extras. Grey rows have a stop that is out of season. Chains only appear when a run used the "chain" option on a window of 21 days or less.</p>
   </section>
   <section id="saved" hidden>
     <div class="tools">
@@ -162,7 +169,21 @@ function renderSaved(){
     : `<div class="empty">No saved trips yet. Press Save on anything in Latest, or open a Save link from the tracker email, and it will appear here.</div>`;
 }
 
-function render(){ renderLatest(); renderSaved(); }
+function renderChains(){
+  const cs = data.chains || [];
+  $('#chainCount').textContent = cs.length ? `(${cs.length})` : '';
+  if (!cs.length) { $('#chainsTable').innerHTML = `<div class="empty">No chains in the latest scan. Run the tracker with the "chain" option on a short window (e.g. from/to a week you're free) and the best multi-city routes will show up here.</div>`; return; }
+  const chead = `<thead><tr><th>Route</th><th>Stops</th><th>One-way legs</th><th class="num hide-m">Flights</th><th class="num hide-m">Bags</th><th class="num hide-m">Ground</th><th class="num">All-in</th></tr></thead>`;
+  const rows = cs.map(c => `<tr class="${c.in_season ? '' : 'off'}">
+    <td><div class="name">${c.route}</div><div class="meta">${fmt(c.out)} – ${fmt(c.back)} · ${c.nights} nights · ${eur(c.total / Math.max(c.nights,1))}/night</div></td>
+    <td>${c.stops.map(s => `<div class="stop">${s.name.split(' –')[0]}<div class="meta">${s.airport} · ${fmt(s.arrive)}–${fmt(s.leave)} · ${s.nights}n · ${eur(s.ground)} ground${s.in_season ? '' : ' · out of season'}${s.alternatives.length ? ' · or: ' + s.alternatives.join(', ') : ''}</div></div>`).join('')}</td>
+    <td class="legs">${c.legs.map(l => `<div><a href="${l.link}" target="_blank" rel="noopener">${fmt(l.day)} ${l.origin}→${l.dest}</a> ${eur(l.price)} <span class="meta">${l.airline}${l.source === 'ryanair' ? '' : ' · cached'}</span></div>`).join('')}</td>
+    <td class="num hide-m">${eur(c.flights)}</td><td class="num hide-m">${eur(c.bags)}</td><td class="num hide-m">${eur(c.ground)}</td>
+    <td class="num"><strong>${eur(c.total)}</strong></td></tr>`);
+  $('#chainsTable').innerHTML = `<table>${chead}<tbody>${rows.join('')}</tbody></table>`;
+}
+
+function render(){ renderLatest(); renderChains(); renderSaved(); }
 
 document.addEventListener('click', ev => {
   const b = ev.target.closest('button.star');
@@ -173,7 +194,7 @@ document.addEventListener('click', ev => {
 document.querySelectorAll('nav button').forEach(b => b.addEventListener('click', () => showTab(b.dataset.tab)));
 function showTab(t){
   document.querySelectorAll('nav button').forEach(b => b.setAttribute('aria-selected', b.dataset.tab === t));
-  $('#latest').hidden = t !== 'latest'; $('#saved').hidden = t !== 'saved';
+  $('#latest').hidden = t !== 'latest'; $('#chains').hidden = t !== 'chains'; $('#saved').hidden = t !== 'saved';
 }
 ['#q','#onlyDeals','#showOff'].forEach(s => $(s).addEventListener('input', renderLatest));
 
@@ -216,7 +237,8 @@ function applyHash(){
     data.deals = data.deals || {};
   } catch { $('#sub').textContent = 'No scan data yet – run the tracker once and it will appear here.'; render(); return; }
   const best = data.estimates.filter(e => e.in_season).sort((a,b) => a.total-b.total)[0];
-  $('#sub').textContent = `Last scan ${new Date(data.generated_at).toLocaleString('en-GB')} · ${data.estimates.length} trip options · ${Object.keys(data.deals).length} deals`;
+  const win = data.window ? ` · window ${fmt(data.window.start)} – ${fmt(data.window.end)}` : '';
+  $('#sub').textContent = `Last scan ${new Date(data.generated_at).toLocaleString('en-GB')}${win} · ${data.estimates.length} trip options · ${Object.keys(data.deals).length} deals · ${(data.chains||[]).length} chains`;
   if (best) $('#hero').innerHTML = `Cheapest in-season trip right now: <b>${best.name.split(' –')[0]}</b>, ${fmt(best.flight.out_date)}–${fmt(best.flight.ret_date)}, ${eur(best.total)} all-in.`;
   persist(); render(); applyHash();
 })();
