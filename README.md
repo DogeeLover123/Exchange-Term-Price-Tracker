@@ -85,7 +85,7 @@ python -m tracker.run --force-verify   # Google-check every in-season trip (burn
 - **Every 2 days at 08:00 Madrid** an email arrives: a 🔥 deals table (if any) and the full ranking,
   each row with Book flight / Google Flights / Hostelworld / Hostelz / Booking / Rome2Rio / ★ Save links.
 - **Want a run now?** GitHub → Actions → trip-tracker → Run workflow. Optional boxes: limit to some
-  countries, cap the date, price **exact dates** (e.g. `Oct 3-10`), or "force verify" everything on
+  countries, set a date window (from/to), price **exact dates** (e.g. `Oct 3-10`), or "force verify" everything on
   Google (uses quota).
 - **Found something good?** Click ★ Save in the email (or Save on the board). It's in the Saved tab
   with the price you saw; the next scans tell you if it's moved.

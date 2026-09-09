@@ -10,6 +10,10 @@ on:
         description: "Only these countries this run (comma-separated, empty = settings.yaml)"
         required: false
         default: ""
+      date_from:
+        description: "Search window start (YYYY-MM-DD, empty = settings.yaml)"
+        required: false
+        default: ""
       date_to:
         description: "Cap the search window end (YYYY-MM-DD, empty = settings.yaml)"
         required: false
@@ -55,12 +59,14 @@ jobs:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
           IN_COUNTRIES: ${{ inputs.countries }}
+          IN_DATE_FROM: ${{ inputs.date_from }}
           IN_DATE_TO: ${{ inputs.date_to }}
           IN_DATES: ${{ inputs.dates }}
           IN_FORCE_VERIFY: ${{ inputs.force_verify }}
         run: |
           ARGS=""
           [ -n "$IN_COUNTRIES" ] && ARGS="$ARGS --countries $IN_COUNTRIES"
+          [ -n "$IN_DATE_FROM" ] && ARGS="$ARGS --from $IN_DATE_FROM"
           [ -n "$IN_DATE_TO" ] && ARGS="$ARGS --to $IN_DATE_TO"
           [ "$IN_FORCE_VERIFY" = "true" ] && ARGS="$ARGS --force-verify"
           if [ -n "$IN_DATES" ]; then
