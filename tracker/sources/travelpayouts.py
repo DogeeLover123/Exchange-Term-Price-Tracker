@@ -59,3 +59,35 @@ def search(origin: str, dest: str, start: date, end: date, min_n: int, max_n: in
                 link="https://www.aviasales.com" + it.get("link", ""),
             ))
     return quotes
+
+
+def search_exact(origin: str, dest: str, out: date, ret: date) -> list[FlightQuote]:
+    """Fixed-dates mode: cached prices for exactly out→ret. Often empty on thin routes –
+    the cache only holds dates other people searched recently."""
+    token = os.environ.get("TRAVELPAYOUTS_TOKEN")
+    if not token:
+        return []
+    try:
+        r = requests.get(API, params={
+            "origin": origin, "destination": dest, "departure_at": out.isoformat(),
+            "return_at": ret.isoformat(), "currency": "eur", "unique": "false",
+            "sorting": "price", "direct": "false", "limit": 20, "token": token,
+        }, timeout=30)
+        r.raise_for_status()
+        data = r.json().get("data", [])
+    except Exception as e:
+        log.info("travelpayouts %s-%s %s→%s: %s", origin, dest, out, ret, e)
+        return []
+    quotes = []
+    for it in data:
+        try:
+            o = datetime.fromisoformat(it["departure_at"][:10]).date()
+            rt = datetime.fromisoformat(it["return_at"][:10]).date()
+        except Exception:
+            continue
+        if (o, rt) != (out, ret):
+            continue
+        quotes.append(FlightQuote(origin=origin, dest_airport=dest, out_date=o, ret_date=rt,
+                                  price=float(it["price"]), airline=it.get("airline", "?"),
+                                  source="travelpayouts", link="https://www.aviasales.com" + it.get("link", "")))
+    return quotes

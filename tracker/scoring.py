@@ -88,42 +88,61 @@ def _month(e: dict) -> str:
     return e["flight"]["out_date"][:7]
 
 
-def past_prices(history: dict, dest_id: str, month: str, days: int = 30) -> list[float]:
+def _matches(e: dict, run: dict, est: TripEstimate, fixed: bool) -> bool:
+    """Window mode compares against window-mode scans of the same destination-month; fixed-dates
+    mode only against fixed-dates scans of the same destination on the same exact days."""
+    if e["dest_id"] != est.dest_id or (run.get("mode", "window") == "fixed") != fixed:
+        return False
+    if fixed:
+        return (e["flight"]["out_date"], e["flight"]["ret_date"]) == (est.flight.out_date.isoformat(),
+                                                                       est.flight.ret_date.isoformat())
+    return _month(e) == est.flight.out_date.strftime("%Y-%m")
+
+
+def past_prices(history: dict, est: TripEstimate, days: int = 30, fixed: bool = False) -> list[float]:
     cutoff = datetime.utcnow() - timedelta(days=days)
     out = []
     for run in history["runs"]:
         if datetime.fromisoformat(run["at"]) < cutoff:
             continue
         for e in run["estimates"]:
-            if e["dest_id"] == dest_id and _month(e) == month:
+            if _matches(e, run, est, fixed):
                 out.append(e["flight"]["verified_price"] or e["flight"]["price"])
     return out
 
 
-def all_time_low(history: dict, dest_id: str, month: str) -> Optional[float]:
+def all_time_low(history: dict, est: TripEstimate, fixed: bool = False) -> Optional[float]:
     vals = [e["flight"]["verified_price"] or e["flight"]["price"]
-            for run in history["runs"] for e in run["estimates"]
-            if e["dest_id"] == dest_id and _month(e) == month]
+            for run in history["runs"] for e in run["estimates"] if _matches(e, run, est, fixed)]
     return min(vals) if vals else None
 
 
-def deal_reasons(est: TripEstimate, history: dict, dest: dict, alert: dict) -> list[str]:
+def deal_reasons(est: TripEstimate, history: dict, dest: dict, alert: dict, fixed: bool = False) -> list[str]:
     if not est.in_season:
         return []
     reasons = []
     threshold = float(dest.get("alert_below", alert["total_below"]))
     if est.total <= threshold:
         reasons.append(f"all-in €{est.total:.0f} ≤ €{threshold:.0f}")
-    month = est.flight.out_date.strftime("%Y-%m")
     min_eur = float(alert.get("drop_min_eur", 0))
-    recent = past_prices(history, est.dest_id, month, int(alert.get("norm_days", 30)))
+    recent = past_prices(history, est, int(alert.get("norm_days", 30)), fixed)
     if len(recent) >= 2:                       # need some history before "the norm" means anything
         norm = statistics.median(recent)
         drop_eur = norm - est.flight_price
         drop_pct = drop_eur / norm * 100 if norm else 0
         if drop_pct >= alert["drop_pct"] and drop_eur >= min_eur:
             reasons.append(f"flight €{drop_eur:.0f} ({drop_pct:.0f}%) under its {len(recent)}-scan norm of €{norm:.0f}")
-    low = all_time_low(history, est.dest_id, month)
+    low = all_time_low(history, est, fixed)
     if alert.get("new_low") and low is not None and low - est.flight_price >= max(min_eur, 1):
         reasons.append(f"new low: €{low - est.flight_price:.0f} under previous best €{low:.0f}")
     return reasons
+
+
+def pick_best_per_dates(quotes: list[FlightQuote], ranges: list[tuple[date, date]]) -> list[FlightQuote]:
+    """Fixed-dates mode: cheapest quote for EACH exact (out, back) pair the user asked for."""
+    out = []
+    for a, b in ranges:
+        best = pick_best([q for q in quotes if q.out_date == a and q.ret_date == b])
+        if best:
+            out.append(best)
+    return out

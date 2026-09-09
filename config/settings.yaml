@@ -3,6 +3,10 @@ origin_airports: [MAD]            # where you fly out of
 search_window:
   start: "2026-09-12"
   end:   "2026-12-20"
+# Exact trip dates instead of the window (leave empty to use the window above).
+# Only flights that leave AND return on these exact days are priced, one row per range.
+# Formats: "Oct 3-10", "October 3 - 10", "2026-10-03:2026-10-10", "Dec 28 - Jan 3".
+fixed_dates: []                   # e.g. ["Oct 3-10", "Nov 5-9"]
 # ---- What to track right now ---------------------------------------------
 # Leave a list empty to mean "all". Country names must match destinations.yaml.
 countries: []                     # e.g. [Bulgaria, Switzerland, Austria, France, Italy]
@@ -34,6 +38,8 @@ alert:
   new_low: true                   # also flag a new all-time low, if it beats the old low by >= drop_min_eur
   digest_always: true             # send the ranked digest every run even with no deals
   max_google_verifications: 8     # per run, spread across your SerpApi keys
+  google_fill_fixed_dates: 15     # fixed-dates mode only: Google lookups per run for destinations
+                                  # Ryanair/Travelpayouts have no price for on those exact days
   min_serpapi_searches_left: 20   # keep this much quota in reserve per key
 
 # ---- Data sources ---------------------------------------------------------

@@ -58,3 +58,26 @@ def search(origin: str, dest: str, start: date, end: date, min_n: int, max_n: in
                 link=ryanair_link(origin, dest, out, ret),
             ))
     return quotes
+
+
+def search_exact(origin: str, dest: str, out: date, ret: date) -> list[FlightQuote]:
+    """Fixed-dates mode: cheapest Ryanair return for exactly out→ret (one fare-finder call)."""
+    if _api is None:
+        return []
+    try:
+        trips = _api.get_cheapest_return_flights(origin, out, out, ret, ret, destination_airport=dest)
+    except Exception as e:
+        log.info("ryanair %s-%s %s→%s: %s", origin, dest, out, ret, e)
+        return []
+    quotes = []
+    for t in trips or []:
+        try:
+            o, r = t.outbound.departureTime.date(), t.inbound.departureTime.date()
+        except Exception:
+            continue
+        if (o, r) != (out, ret):
+            continue
+        quotes.append(FlightQuote(origin=origin, dest_airport=dest, out_date=o, ret_date=r,
+                                  price=float(t.totalPrice), airline="Ryanair", source="ryanair",
+                                  link=ryanair_link(origin, dest, o, r)))
+    return quotes

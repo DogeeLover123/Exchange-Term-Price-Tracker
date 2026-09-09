@@ -76,6 +76,7 @@ export $(grep -v '^#' .env | xargs)
 python -m tracker.run --dry-run        # prints ranking, no email, no history
 python -m tracker.run                  # real run
 python -m tracker.run --only madeira,toubkal --no-email
+python -m tracker.run --dates "Oct 3-10"        # price exactly depart 3 Oct / back 10 Oct
 python -m tracker.run --force-verify   # Google-check every in-season trip (burns quota)
 ```
 
@@ -84,7 +85,8 @@ python -m tracker.run --force-verify   # Google-check every in-season trip (burn
 - **Every 2 days at 08:00 Madrid** an email arrives: a 🔥 deals table (if any) and the full ranking,
   each row with Book flight / Google Flights / Hostelworld / Hostelz / Booking / Rome2Rio / ★ Save links.
 - **Want a run now?** GitHub → Actions → trip-tracker → Run workflow. Optional boxes: limit to some
-  countries, cap the date, or "force verify" everything on Google (uses quota).
+  countries, cap the date, price **exact dates** (e.g. `Oct 3-10`), or "force verify" everything on
+  Google (uses quota).
 - **Found something good?** Click ★ Save in the email (or Save on the board). It's in the Saved tab
   with the price you saw; the next scans tell you if it's moved.
 - **Sharing with friends:** Saved tab → Copy share link → send it.
@@ -128,6 +130,35 @@ python -m tracker.run --countries Bulgaria,Switzerland --to 2026-10-31
 or on GitHub: Actions → trip-tracker → Run workflow → fill "countries" / "date_to".
 The scheduled run always uses `settings.yaml`. Fewer destinations = faster runs and more Google
 quota per destination, so narrowing is worth doing whenever you know your booking horizon.
+
+## Exact dates (e.g. "I can only go October 3–10")
+
+By default the tracker hunts for the cheapest 2–5 night trip anywhere in the window. If your dates are
+fixed, tell it so and it prices **only** flights that leave and return on those exact days, one row per
+date range per destination:
+
+```bash
+python -m tracker.run --dates "Oct 3-10"                       # month name, year = next occurrence
+python -m tracker.run --dates "2026-10-03:2026-10-10"           # ISO out:back
+python -m tracker.run --dates "Oct 3-10, Nov 5-9, Dec 28 - Jan 3" # several ranges
+```
+
+On GitHub: Actions → trip-tracker → Run workflow → fill the **dates** box. To make it permanent (every
+scheduled run), set it in `config/settings.yaml`:
+
+```yaml
+fixed_dates: ["Oct 3-10"]     # [] = back to window mode
+```
+
+`--dates` overrides `fixed_dates`, which overrides `search_window` / `trip_nights`. Ranges whose
+departure is already past are skipped with a warning. Price history is still kept per destination-month,
+so drop/new-low alerts compare against earlier scans of that month.
+
+How exact dates are priced: Ryanair is asked for that exact day pair (reliable). Travelpayouts is a
+cache of other people's searches, so it is often empty for a specific pair. Destinations that neither
+source can price are looked up on Google Flights, up to `alert.google_fill_fixed_dates` per run
+(default 15, in-season first) so a full 40-destination run doesn't drain the free SerpApi quota. Narrow
+with `--countries` or `--only` when you want every destination priced on your dates.
 
 ## Tuning
 
