@@ -23317,6 +23317,1462 @@
     }
    ],
    "chains": []
+  },
+  {
+   "at": "2026-09-15T15:34:24.335497",
+   "mode": "window",
+   "dates": null,
+   "estimates": [
+    {
+     "dest_id": "gavarnie_pyrenees",
+     "name": "Pyrenees – Gavarnie cirque, Cauterets, Néouvielle",
+     "country": "France",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "TLS",
+      "out_date": "2026-10-09",
+      "ret_date": "2026-10-11",
+      "price": 68.0,
+      "airline": "V7",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD0910TLS11101?t=V717915502001791555000000080MADTLS17917146001791720000000090TLSMAD_4a03785e377ea08c2658848696dea2ee_6598&search_date=13092026&expected_price_uuid=01a09be0-773e-8030-66eb-6c0627a3719c&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Ldi3ECakQN-9Xy2_MUe-7Q&expected_price_source=share&expected_price_currency=eur&expected_price=68",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 45.0,
+     "hostel_per_night": 30.0,
+     "hostel_total": 60.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "Snow from late Oct; refuges close early Oct.",
+     "total": 198.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD0910TLS11101?t=V717915502001791555000000080MADTLS17917146001791720000000090TLSMAD_4a03785e377ea08c2658848696dea2ee_6598&search_date=13092026&expected_price_uuid=01a09be0-773e-8030-66eb-6c0627a3719c&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Ldi3ECakQN-9Xy2_MUe-7Q&expected_price_source=share&expected_price_currency=eur&expected_price=68",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+TLS+on+2026-10-09+through+2026-10-11",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Gavarnie&date_from=2026-10-09&date_to=2026-10-11&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Gavarnie",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Gavarnie&checkin=2026-10-09&checkout=2026-10-11&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/TLS/Gavarnie",
+      "transit: Train Toulouse→Lourdes + bus 965 to Gavarnie (return)": "https://www.sncf-connect.com"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "chamonix",
+     "name": "Chamonix – Lac Blanc, Mont Blanc balcony trails",
+     "country": "France",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "GVA",
+      "out_date": "2026-10-08",
+      "ret_date": "2026-10-12",
+      "price": 122.0,
+      "airline": "IB",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD0810GVA12101?t=IB17914914001791498300000115MADGVA17917848001791792300000125GVAMAD_44f7ce0de8c6102b3636d8b282052e97_11866&search_date=12092026&expected_price_uuid=01a09542-821f-8030-e640-cee71d305eb5&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=8LxQyQT-3B6VyjHUJ3JQIQ&expected_price_source=share&expected_price_currency=eur&expected_price=122",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 40.0,
+     "hostel_per_night": 40.0,
+     "hostel_total": 160.0,
+     "extras": 35.0,
+     "in_season": true,
+     "closure_note": "Huts close end Sept; lifts wind down mid-Oct.",
+     "total": 382.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD0810GVA12101?t=IB17914914001791498300000115MADGVA17917848001791792300000125GVAMAD_44f7ce0de8c6102b3636d8b282052e97_11866&search_date=12092026&expected_price_uuid=01a09542-821f-8030-e640-cee71d305eb5&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=8LxQyQT-3B6VyjHUJ3JQIQ&expected_price_source=share&expected_price_currency=eur&expected_price=122",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+GVA+on+2026-10-08+through+2026-10-12",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Chamonix&date_from=2026-10-08&date_to=2026-10-12&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Chamonix",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Chamonix&checkin=2026-10-08&checkout=2026-10-12&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/GVA/Chamonix",
+      "transit: FlixBus/BlaBlaCar Bus GVA→Chamonix (return)": "https://global.flixbus.com"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "verdon",
+     "name": "Gorges du Verdon",
+     "country": "France",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "MRS",
+      "out_date": "2026-10-03",
+      "ret_date": "2026-10-07",
+      "price": 40.98,
+      "airline": "Ryanair",
+      "source": "ryanair",
+      "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-10-03&dateIn=2026-10-07&originIata=MAD&destinationIata=MRS",
+      "verified": true,
+      "verified_price": 41.0
+     },
+     "bag": 25.0,
+     "transit": 30.0,
+     "hostel_per_night": 30.0,
+     "hostel_total": 120.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 216.0,
+     "links": {
+      "flight": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-10-03&dateIn=2026-10-07&originIata=MAD&destinationIata=MRS",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+MRS+on+2026-10-03+through+2026-10-07",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Castellane&date_from=2026-10-03&date_to=2026-10-07&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Castellane",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Castellane&checkin=2026-10-03&checkout=2026-10-07&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/MRS/Castellane",
+      "transit: Zou! bus Marseille/Nice→Castellane (return)": "https://zou.maregionsud.fr"
+     },
+     "flags": []
+    },
+    {
+     "dest_id": "calanques",
+     "name": "Calanques (Marseille)",
+     "country": "France",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "MRS",
+      "out_date": "2026-10-03",
+      "ret_date": "2026-10-07",
+      "price": 40.98,
+      "airline": "Ryanair",
+      "source": "ryanair",
+      "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-10-03&dateIn=2026-10-07&originIata=MAD&destinationIata=MRS",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 25.0,
+     "hostel_per_night": 28.0,
+     "hostel_total": 112.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "Fire-risk closures end in Oct; perfect autumn–winter.",
+     "total": 202.98,
+     "links": {
+      "flight": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-10-03&dateIn=2026-10-07&originIata=MAD&destinationIata=MRS",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+MRS+on+2026-10-03+through+2026-10-07",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Marseille&date_from=2026-10-03&date_to=2026-10-07&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Marseille",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Marseille&checkin=2026-10-03&checkout=2026-10-07&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/MRS/Marseille"
+     },
+     "flags": []
+    },
+    {
+     "dest_id": "lauterbrunnen",
+     "name": "Lauterbrunnen / Grindelwald / Jungfrau",
+     "country": "Switzerland",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "ZRH",
+      "out_date": "2026-10-12",
+      "ret_date": "2026-10-14",
+      "price": 117.0,
+      "airline": "IB",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1210ZRH14101?t=IB17918418001791878100000605MADFCOZRH17920005001792023900000390ZRHPMIMAD_d4ef58927209d3425b5fd08723bff1ba_11432&search_date=11092026&expected_price_uuid=01a0913b-3bf4-8040-6831-a95e9ed90e97&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gefLkDUnZkYIc67oQlHcYQ&expected_price_source=share&expected_price_currency=eur&expected_price=117",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 78.0,
+     "hostel_per_night": 0.0,
+     "hostel_total": 0.0,
+     "extras": 40.0,
+     "in_season": true,
+     "closure_note": "Golden Sept–Oct; Nov is dead season (many lifts shut); Dec snowy but scenic.",
+     "total": 260.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1210ZRH14101?t=IB17918418001791878100000605MADFCOZRH17920005001792023900000390ZRHPMIMAD_d4ef58927209d3425b5fd08723bff1ba_11432&search_date=11092026&expected_price_uuid=01a0913b-3bf4-8040-6831-a95e9ed90e97&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gefLkDUnZkYIc67oQlHcYQ&expected_price_source=share&expected_price_currency=eur&expected_price=117",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+ZRH+on+2026-10-12+through+2026-10-14",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Lauterbrunnen&date_from=2026-10-12&date_to=2026-10-14&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Lauterbrunnen",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Lauterbrunnen&checkin=2026-10-12&checkout=2026-10-14&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/ZRH/Lauterbrunnen",
+      "transit: SBB Saver Day Pass (Basel→Lauterbrunnen & back)": "https://www.sbb.ch/en/tickets-offers/tickets/saver-day-pass.html"
+     },
+     "flags": [
+      "free stay (friend)",
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "zermatt",
+     "name": "Zermatt – Five Lakes, Gornergrat",
+     "country": "Switzerland",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "ZRH",
+      "out_date": "2026-10-12",
+      "ret_date": "2026-10-14",
+      "price": 117.0,
+      "airline": "IB",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1210ZRH14101?t=IB17918418001791878100000605MADFCOZRH17920005001792023900000390ZRHPMIMAD_d4ef58927209d3425b5fd08723bff1ba_11432&search_date=11092026&expected_price_uuid=01a0913b-3bf4-8040-6831-a95e9ed90e97&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gefLkDUnZkYIc67oQlHcYQ&expected_price_source=share&expected_price_currency=eur&expected_price=117",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 100.0,
+     "hostel_per_night": 0.0,
+     "hostel_total": 0.0,
+     "extras": 45.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 287.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1210ZRH14101?t=IB17918418001791878100000605MADFCOZRH17920005001792023900000390ZRHPMIMAD_d4ef58927209d3425b5fd08723bff1ba_11432&search_date=11092026&expected_price_uuid=01a0913b-3bf4-8040-6831-a95e9ed90e97&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gefLkDUnZkYIc67oQlHcYQ&expected_price_source=share&expected_price_currency=eur&expected_price=117",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+ZRH+on+2026-10-12+through+2026-10-14",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Zermatt&date_from=2026-10-12&date_to=2026-10-14&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Zermatt",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Zermatt&checkin=2026-10-12&checkout=2026-10-14&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/ZRH/Zermatt",
+      "transit: SBB Saver Day Pass x2": "https://www.sbb.ch/en/tickets-offers/tickets/saver-day-pass.html"
+     },
+     "flags": [
+      "free stay (friend)",
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "oeschinensee",
+     "name": "Oeschinensee / Kandersteg",
+     "country": "Switzerland",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "ZRH",
+      "out_date": "2026-10-12",
+      "ret_date": "2026-10-14",
+      "price": 117.0,
+      "airline": "IB",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1210ZRH14101?t=IB17918418001791878100000605MADFCOZRH17920005001792023900000390ZRHPMIMAD_d4ef58927209d3425b5fd08723bff1ba_11432&search_date=11092026&expected_price_uuid=01a0913b-3bf4-8040-6831-a95e9ed90e97&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gefLkDUnZkYIc67oQlHcYQ&expected_price_source=share&expected_price_currency=eur&expected_price=117",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 78.0,
+     "hostel_per_night": 0.0,
+     "hostel_total": 0.0,
+     "extras": 30.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 250.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1210ZRH14101?t=IB17918418001791878100000605MADFCOZRH17920005001792023900000390ZRHPMIMAD_d4ef58927209d3425b5fd08723bff1ba_11432&search_date=11092026&expected_price_uuid=01a0913b-3bf4-8040-6831-a95e9ed90e97&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gefLkDUnZkYIc67oQlHcYQ&expected_price_source=share&expected_price_currency=eur&expected_price=117",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+ZRH+on+2026-10-12+through+2026-10-14",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Kandersteg&date_from=2026-10-12&date_to=2026-10-14&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Kandersteg",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Kandersteg&checkin=2026-10-12&checkout=2026-10-14&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/ZRH/Kandersteg"
+     },
+     "flags": [
+      "free stay (friend)",
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "appenzell",
+     "name": "Appenzell – Ebenalp, Seealpsee",
+     "country": "Switzerland",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "ZRH",
+      "out_date": "2026-10-12",
+      "ret_date": "2026-10-14",
+      "price": 117.0,
+      "airline": "IB",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD1210ZRH14101?t=IB17918418001791878100000605MADFCOZRH17920005001792023900000390ZRHPMIMAD_d4ef58927209d3425b5fd08723bff1ba_11432&search_date=11092026&expected_price_uuid=01a0913b-3bf4-8040-6831-a95e9ed90e97&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gefLkDUnZkYIc67oQlHcYQ&expected_price_source=share&expected_price_currency=eur&expected_price=117",
+      "verified": true,
+      "verified_price": 183.0
+     },
+     "bag": 25.0,
+     "transit": 50.0,
+     "hostel_per_night": 0.0,
+     "hostel_total": 0.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 258.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD1210ZRH14101?t=IB17918418001791878100000605MADFCOZRH17920005001792023900000390ZRHPMIMAD_d4ef58927209d3425b5fd08723bff1ba_11432&search_date=11092026&expected_price_uuid=01a0913b-3bf4-8040-6831-a95e9ed90e97&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gefLkDUnZkYIc67oQlHcYQ&expected_price_source=share&expected_price_currency=eur&expected_price=117",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+ZRH+on+2026-10-12+through+2026-10-14",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Appenzell&date_from=2026-10-12&date_to=2026-10-14&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Appenzell",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Appenzell&checkin=2026-10-12&checkout=2026-10-14&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/ZRH/Appenzell"
+     },
+     "flags": [
+      "free stay (friend)",
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "ticino",
+     "name": "Ticino – Verzasca & Maggia valleys",
+     "country": "Switzerland",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "MXP",
+      "out_date": "2026-10-01",
+      "ret_date": "2026-10-06",
+      "price": 34.84,
+      "airline": "Ryanair",
+      "source": "ryanair",
+      "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-10-01&dateIn=2026-10-06&originIata=MAD&destinationIata=MXP",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 50.0,
+     "hostel_per_night": 40.0,
+     "hostel_total": 200.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 309.84,
+     "links": {
+      "flight": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-10-01&dateIn=2026-10-06&originIata=MAD&destinationIata=MXP",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+MXP+on+2026-10-01+through+2026-10-06",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Locarno&date_from=2026-10-01&date_to=2026-10-06&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Locarno",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Locarno&checkin=2026-10-01&checkout=2026-10-06&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/MXP/Locarno"
+     },
+     "flags": []
+    },
+    {
+     "dest_id": "hallstatt_dachstein",
+     "name": "Hallstatt / Dachstein (5 Fingers, Gosausee)",
+     "country": "Austria",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "VIE",
+      "out_date": "2026-10-03",
+      "ret_date": "2026-10-07",
+      "price": 131.0,
+      "airline": "FR",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD0310VIE07101?t=FR17910087001791019500000180MADVIE17913645001791375900000190VIEMAD_1a9bb46814471430a849128abd457f68_13029&search_date=08092026&expected_price_uuid=01a081d4-e4df-8030-6801-1412d184d8d9&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=kuTkm6Tq8CVADHSObYmqdw&expected_price_source=share&expected_price_currency=eur&expected_price=131",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 40.0,
+     "hostel_per_night": 35.0,
+     "hostel_total": 140.0,
+     "extras": 38.0,
+     "in_season": true,
+     "closure_note": "Dachstein lifts run to late Oct.",
+     "total": 374.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD0310VIE07101?t=FR17910087001791019500000180MADVIE17913645001791375900000190VIEMAD_1a9bb46814471430a849128abd457f68_13029&search_date=08092026&expected_price_uuid=01a081d4-e4df-8030-6801-1412d184d8d9&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=kuTkm6Tq8CVADHSObYmqdw&expected_price_source=share&expected_price_currency=eur&expected_price=131",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+VIE+on+2026-10-03+through+2026-10-07",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Hallstatt&date_from=2026-10-03&date_to=2026-10-07&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Hallstatt",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Hallstatt&checkin=2026-10-03&checkout=2026-10-07&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/VIE/Hallstatt",
+      "transit: Train Salzburg→Hallstatt via Attnang (return)": "https://www.oebb.at"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "innsbruck_stubai",
+     "name": "Innsbruck – Nordkette, Stubai",
+     "country": "Austria",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "MUC",
+      "out_date": "2026-10-08",
+      "ret_date": "2026-10-12",
+      "price": 203.0,
+      "airline": "UX",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD0810MUC12101?t=UX17914434001791452700000155MADMUC17918259001791936900001850MUCPMIMAD_d72086d20d70d637b913f47211da31fb_19782&search_date=14092026&expected_price_uuid=01a0a156-1668-8050-eebe-529ae6d6d84d&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=AWcupw_153lMzEGZu_Bmrg&expected_price_source=share&expected_price_currency=eur&expected_price=203",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 20.0,
+     "hostel_per_night": 30.0,
+     "hostel_total": 120.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "Autumn hiking to Oct; Dec = snow walking / Nordkette open.",
+     "total": 368.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD0810MUC12101?t=UX17914434001791452700000155MADMUC17918259001791936900001850MUCPMIMAD_d72086d20d70d637b913f47211da31fb_19782&search_date=14092026&expected_price_uuid=01a0a156-1668-8050-eebe-529ae6d6d84d&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=AWcupw_153lMzEGZu_Bmrg&expected_price_source=share&expected_price_currency=eur&expected_price=203",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+MUC+on+2026-10-08+through+2026-10-12",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Innsbruck&date_from=2026-10-08&date_to=2026-10-12&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Innsbruck",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Innsbruck&checkin=2026-10-08&checkout=2026-10-12&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/MUC/Innsbruck"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "zell_am_see",
+     "name": "Zell am See / Kaprun",
+     "country": "Austria",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "MUC",
+      "out_date": "2026-10-08",
+      "ret_date": "2026-10-12",
+      "price": 203.0,
+      "airline": "UX",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD0810MUC12101?t=UX17914434001791452700000155MADMUC17918259001791936900001850MUCPMIMAD_d72086d20d70d637b913f47211da31fb_19782&search_date=14092026&expected_price_uuid=01a0a156-1668-8050-eebe-529ae6d6d84d&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=AWcupw_153lMzEGZu_Bmrg&expected_price_source=share&expected_price_currency=eur&expected_price=203",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 40.0,
+     "hostel_per_night": 35.0,
+     "hostel_total": 140.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 408.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD0810MUC12101?t=UX17914434001791452700000155MADMUC17918259001791936900001850MUCPMIMAD_d72086d20d70d637b913f47211da31fb_19782&search_date=14092026&expected_price_uuid=01a0a156-1668-8050-eebe-529ae6d6d84d&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=AWcupw_153lMzEGZu_Bmrg&expected_price_source=share&expected_price_currency=eur&expected_price=203",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+MUC+on+2026-10-08+through+2026-10-12",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Zell+am+See&date_from=2026-10-08&date_to=2026-10-12&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Zell+am+See",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Zell+am+See&checkin=2026-10-08&checkout=2026-10-12&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/MUC/Zell+am+See",
+      "transit: Train Salzburg→Zell am See (return)": "https://www.oebb.at"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "zillertal",
+     "name": "Zillertal",
+     "country": "Austria",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "MUC",
+      "out_date": "2026-10-08",
+      "ret_date": "2026-10-12",
+      "price": 203.0,
+      "airline": "UX",
+      "source": "travelpayouts",
+      "link": "https://www.aviasales.com/search/MAD0810MUC12101?t=UX17914434001791452700000155MADMUC17918259001791936900001850MUCPMIMAD_d72086d20d70d637b913f47211da31fb_19782&search_date=14092026&expected_price_uuid=01a0a156-1668-8050-eebe-529ae6d6d84d&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=AWcupw_153lMzEGZu_Bmrg&expected_price_source=share&expected_price_currency=eur&expected_price=203",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 30.0,
+     "hostel_per_night": 35.0,
+     "hostel_total": 140.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 398.0,
+     "links": {
+      "flight": "https://www.aviasales.com/search/MAD0810MUC12101?t=UX17914434001791452700000155MADMUC17918259001791936900001850MUCPMIMAD_d72086d20d70d637b913f47211da31fb_19782&search_date=14092026&expected_price_uuid=01a0a156-1668-8050-eebe-529ae6d6d84d&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=AWcupw_153lMzEGZu_Bmrg&expected_price_source=share&expected_price_currency=eur&expected_price=203",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+MUC+on+2026-10-08+through+2026-10-12",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Mayrhofen&date_from=2026-10-08&date_to=2026-10-12&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Mayrhofen",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Mayrhofen&checkin=2026-10-08&checkout=2026-10-12&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/MUC/Mayrhofen"
+     },
+     "flags": [
+      "cached price – verify"
+     ]
+    },
+    {
+     "dest_id": "rila_seven_lakes",
+     "name": "Rila – Seven Lakes, Musala, Rila Monastery",
+     "country": "Bulgaria",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "SOF",
+      "out_date": "2026-10-01",
+      "ret_date": "2026-10-06",
+      "price": 86.58000000000001,
+      "airline": "Ryanair",
+      "source": "ryanair",
+      "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-10-01&dateIn=2026-10-06&originIata=MAD&destinationIata=SOF",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 15.0,
+     "hostel_per_night": 15.0,
+     "hostel_total": 75.0,
+     "extras": 30.0,
+     "in_season": true,
+     "closure_note": "Chairlift & huts close / snow from Nov.",
+     "total": 231.58,
+     "links": {
+      "flight": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-10-01&dateIn=2026-10-06&originIata=MAD&destinationIata=SOF",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+SOF+on+2026-10-01+through+2026-10-06",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Sofia&date_from=2026-10-01&date_to=2026-10-06&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Sofia",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Sofia&checkin=2026-10-01&checkout=2026-10-06&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/SOF/Sofia"
+     },
+     "flags": []
+    },
+    {
+     "dest_id": "pirin_vihren",
+     "name": "Pirin – Vihren, Koncheto, Bansko",
+     "country": "Bulgaria",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "SOF",
+      "out_date": "2026-10-01",
+      "ret_date": "2026-10-06",
+      "price": 86.58000000000001,
+      "airline": "Ryanair",
+      "source": "ryanair",
+      "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-10-01&dateIn=2026-10-06&originIata=MAD&destinationIata=SOF",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 25.0,
+     "hostel_per_night": 15.0,
+     "hostel_total": 75.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 211.58,
+     "links": {
+      "flight": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-10-01&dateIn=2026-10-06&originIata=MAD&destinationIata=SOF",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+SOF+on+2026-10-01+through+2026-10-06",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Bansko&date_from=2026-10-01&date_to=2026-10-06&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Bansko",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Bansko&checkin=2026-10-01&checkout=2026-10-06&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/SOF/Bansko"
+     },
+     "flags": []
+    },
+    {
+     "dest_id": "rhodopes",
+     "name": "Rhodopes – Trigrad, Wonderful Bridges, Devil's Throat",
+     "country": "Bulgaria",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "SOF",
+      "out_date": "2026-10-01",
+      "ret_date": "2026-10-06",
+      "price": 86.58000000000001,
+      "airline": "Ryanair",
+      "source": "ryanair",
+      "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-10-01&dateIn=2026-10-06&originIata=MAD&destinationIata=SOF",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 25.0,
+     "hostel_per_night": 14.0,
+     "hostel_total": 70.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 206.58,
+     "links": {
+      "flight": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-10-01&dateIn=2026-10-06&originIata=MAD&destinationIata=SOF",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+SOF+on+2026-10-01+through+2026-10-06",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Plovdiv&date_from=2026-10-01&date_to=2026-10-06&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Plovdiv",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Plovdiv&checkin=2026-10-01&checkout=2026-10-06&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/SOF/Plovdiv"
+     },
+     "flags": []
+    },
+    {
+     "dest_id": "central_balkan",
+     "name": "Central Balkan – Botev, Buzludzha, Belogradchik",
+     "country": "Bulgaria",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "SOF",
+      "out_date": "2026-10-01",
+      "ret_date": "2026-10-06",
+      "price": 86.58000000000001,
+      "airline": "Ryanair",
+      "source": "ryanair",
+      "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-10-01&dateIn=2026-10-06&originIata=MAD&destinationIata=SOF",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 25.0,
+     "hostel_per_night": 14.0,
+     "hostel_total": 70.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 206.58,
+     "links": {
+      "flight": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-10-01&dateIn=2026-10-06&originIata=MAD&destinationIata=SOF",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+SOF+on+2026-10-01+through+2026-10-06",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Veliko+Tarnovo&date_from=2026-10-01&date_to=2026-10-06&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Veliko+Tarnovo",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Veliko+Tarnovo&checkin=2026-10-01&checkout=2026-10-06&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/SOF/Veliko+Tarnovo"
+     },
+     "flags": []
+    },
+    {
+     "dest_id": "vitosha",
+     "name": "Vitosha (Sofia day hikes)",
+     "country": "Bulgaria",
+     "flight": {
+      "origin": "MAD",
+      "dest_airport": "SOF",
+      "out_date": "2026-10-01",
+      "ret_date": "2026-10-06",
+      "price": 86.58000000000001,
+      "airline": "Ryanair",
+      "source": "ryanair",
+      "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-10-01&dateIn=2026-10-06&originIata=MAD&destinationIata=SOF",
+      "verified": false,
+      "verified_price": null
+     },
+     "bag": 25.0,
+     "transit": 5.0,
+     "hostel_per_night": 15.0,
+     "hostel_total": 75.0,
+     "extras": 0.0,
+     "in_season": true,
+     "closure_note": "",
+     "total": 191.58,
+     "links": {
+      "flight": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=true&dateOut=2026-10-01&dateIn=2026-10-06&originIata=MAD&destinationIata=SOF",
+      "google_flights": "https://www.google.com/travel/flights?q=Flights+from+MAD+to+SOF+on+2026-10-01+through+2026-10-06",
+      "hostelworld": "https://www.hostelworld.com/search?search_keywords=Sofia&date_from=2026-10-01&date_to=2026-10-06&number_of_guests=1",
+      "hostelz": "https://www.hostelz.com/search?q=Sofia",
+      "booking_hostels": "https://www.booking.com/searchresults.html?ss=Sofia&checkin=2026-10-01&checkout=2026-10-06&group_adults=1&no_rooms=1&nflt=ht_id%3D203&order=price",
+      "transit": "https://www.rome2rio.com/s/SOF/Sofia"
+     },
+     "flags": []
+    }
+   ],
+   "chains": [
+    {
+     "route": "MAD → BGY → SOF → MAD",
+     "out": "2026-10-02",
+     "back": "2026-10-06",
+     "nights": 4,
+     "flights": 104.4,
+     "bags": 37.5,
+     "ground": 165.0,
+     "total": 306.9,
+     "in_season": true,
+     "legs": [
+      {
+       "day": "2026-10-02",
+       "origin": "MAD",
+       "dest": "BGY",
+       "price": 52.86,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-02&originIata=MAD&destinationIata=BGY"
+      },
+      {
+       "day": "2026-10-04",
+       "origin": "BGY",
+       "dest": "SOF",
+       "price": 15.95,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-04&originIata=BGY&destinationIata=SOF"
+      },
+      {
+       "day": "2026-10-06",
+       "origin": "SOF",
+       "dest": "MAD",
+       "price": 35.59,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-06&originIata=SOF&destinationIata=MAD"
+      }
+     ],
+     "stops": [
+      {
+       "dest_id": "ticino",
+       "name": "Ticino – Verzasca & Maggia valleys",
+       "country": "Switzerland",
+       "airport": "BGY",
+       "arrive": "2026-10-02",
+       "leave": "2026-10-04",
+       "nights": 2,
+       "hostel_per_night": 40.0,
+       "transit": 50.0,
+       "extras": 0.0,
+       "ground": 130.0,
+       "in_season": true,
+       "alternatives": []
+      },
+      {
+       "dest_id": "vitosha",
+       "name": "Vitosha (Sofia day hikes)",
+       "country": "Bulgaria",
+       "airport": "SOF",
+       "arrive": "2026-10-04",
+       "leave": "2026-10-06",
+       "nights": 2,
+       "hostel_per_night": 15.0,
+       "transit": 5.0,
+       "extras": 0.0,
+       "ground": 35.0,
+       "in_season": true,
+       "alternatives": [
+        "Rhodopes",
+        "Central Balkan",
+        "Pirin"
+       ]
+      }
+     ]
+    },
+    {
+     "route": "MAD → SOF → BGY → MAD",
+     "out": "2026-10-07",
+     "back": "2026-10-11",
+     "nights": 4,
+     "flights": 115.98,
+     "bags": 37.5,
+     "ground": 165.0,
+     "total": 318.48,
+     "in_season": true,
+     "legs": [
+      {
+       "day": "2026-10-07",
+       "origin": "MAD",
+       "dest": "SOF",
+       "price": 27.99,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-07&originIata=MAD&destinationIata=SOF"
+      },
+      {
+       "day": "2026-10-09",
+       "origin": "SOF",
+       "dest": "BGY",
+       "price": 14.99,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-09&originIata=SOF&destinationIata=BGY"
+      },
+      {
+       "day": "2026-10-11",
+       "origin": "BGY",
+       "dest": "MAD",
+       "price": 73.0,
+       "airline": "FR",
+       "source": "travelpayouts",
+       "link": "https://www.aviasales.com/search/BGY1110MAD1?t=FR17917590001791767700000145BGYMAD_f2a9f1ccb8082bbde009802caaee48d3_7085&search_date=13092026&expected_price_uuid=01a09c41-ac3e-8050-ef8f-9cc69bc60dc9&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ezYDdV6QtAe2vG5vWmbGfQ&origin_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=73"
+      }
+     ],
+     "stops": [
+      {
+       "dest_id": "vitosha",
+       "name": "Vitosha (Sofia day hikes)",
+       "country": "Bulgaria",
+       "airport": "SOF",
+       "arrive": "2026-10-07",
+       "leave": "2026-10-09",
+       "nights": 2,
+       "hostel_per_night": 15.0,
+       "transit": 5.0,
+       "extras": 0.0,
+       "ground": 35.0,
+       "in_season": true,
+       "alternatives": [
+        "Rhodopes",
+        "Central Balkan",
+        "Pirin"
+       ]
+      },
+      {
+       "dest_id": "ticino",
+       "name": "Ticino – Verzasca & Maggia valleys",
+       "country": "Switzerland",
+       "airport": "BGY",
+       "arrive": "2026-10-09",
+       "leave": "2026-10-11",
+       "nights": 2,
+       "hostel_per_night": 40.0,
+       "transit": 50.0,
+       "extras": 0.0,
+       "ground": 130.0,
+       "in_season": true,
+       "alternatives": []
+      }
+     ]
+    },
+    {
+     "route": "MAD → BGY → MRS → MAD",
+     "out": "2026-10-06",
+     "back": "2026-10-10",
+     "nights": 4,
+     "flights": 72.12,
+     "bags": 37.5,
+     "ground": 211.0,
+     "total": 320.62,
+     "in_season": true,
+     "legs": [
+      {
+       "day": "2026-10-06",
+       "origin": "MAD",
+       "dest": "BGY",
+       "price": 32.0,
+       "airline": "FR",
+       "source": "travelpayouts",
+       "link": "https://www.aviasales.com/search/MAD0610BGY1?t=FR17912676001791275700000135MADBGY_01dc528e97897a99c81726aff0c1a4ec_3086&search_date=14092026&expected_price_uuid=01a0a0f6-4013-8030-2492-6b0497003e33&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=g-r4PzcSZy7Sk33j2r1pYg&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=32"
+      },
+      {
+       "day": "2026-10-08",
+       "origin": "BGY",
+       "dest": "MRS",
+       "price": 15.12,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-08&originIata=BGY&destinationIata=MRS"
+      },
+      {
+       "day": "2026-10-10",
+       "origin": "MRS",
+       "dest": "MAD",
+       "price": 25.0,
+       "airline": "FR",
+       "source": "travelpayouts",
+       "link": "https://www.aviasales.com/search/MRS1010MAD1?t=FR17916729001791679500000110MRSMAD_d9d3feb650efe6c5b0ebdde583324646_2449&search_date=15092026&expected_price_uuid=01a0a442-5bd2-8030-26eb-59b58ef7a8e2&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=INQ1oQ7O-2OEYqnL-nrozw&expected_price_source=share&expected_price_currency=eur&expected_price=25"
+      }
+     ],
+     "stops": [
+      {
+       "dest_id": "ticino",
+       "name": "Ticino – Verzasca & Maggia valleys",
+       "country": "Switzerland",
+       "airport": "BGY",
+       "arrive": "2026-10-06",
+       "leave": "2026-10-08",
+       "nights": 2,
+       "hostel_per_night": 40.0,
+       "transit": 50.0,
+       "extras": 0.0,
+       "ground": 130.0,
+       "in_season": true,
+       "alternatives": []
+      },
+      {
+       "dest_id": "calanques",
+       "name": "Calanques (Marseille)",
+       "country": "France",
+       "airport": "MRS",
+       "arrive": "2026-10-08",
+       "leave": "2026-10-10",
+       "nights": 2,
+       "hostel_per_night": 28.0,
+       "transit": 25.0,
+       "extras": 0.0,
+       "ground": 81.0,
+       "in_season": true,
+       "alternatives": [
+        "Gorges du Verdon"
+       ]
+      }
+     ]
+    },
+    {
+     "route": "MAD → VIE → SOF → MAD",
+     "out": "2026-10-02",
+     "back": "2026-10-06",
+     "nights": 4,
+     "flights": 119.57,
+     "bags": 37.5,
+     "ground": 183.0,
+     "total": 340.07,
+     "in_season": true,
+     "legs": [
+      {
+       "day": "2026-10-02",
+       "origin": "MAD",
+       "dest": "VIE",
+       "price": 63.99,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-02&originIata=MAD&destinationIata=VIE"
+      },
+      {
+       "day": "2026-10-04",
+       "origin": "VIE",
+       "dest": "SOF",
+       "price": 19.99,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-04&originIata=VIE&destinationIata=SOF"
+      },
+      {
+       "day": "2026-10-06",
+       "origin": "SOF",
+       "dest": "MAD",
+       "price": 35.59,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-06&originIata=SOF&destinationIata=MAD"
+      }
+     ],
+     "stops": [
+      {
+       "dest_id": "hallstatt_dachstein",
+       "name": "Hallstatt / Dachstein (5 Fingers, Gosausee)",
+       "country": "Austria",
+       "airport": "VIE",
+       "arrive": "2026-10-02",
+       "leave": "2026-10-04",
+       "nights": 2,
+       "hostel_per_night": 35.0,
+       "transit": 40.0,
+       "extras": 38.0,
+       "ground": 148.0,
+       "in_season": true,
+       "alternatives": []
+      },
+      {
+       "dest_id": "vitosha",
+       "name": "Vitosha (Sofia day hikes)",
+       "country": "Bulgaria",
+       "airport": "SOF",
+       "arrive": "2026-10-04",
+       "leave": "2026-10-06",
+       "nights": 2,
+       "hostel_per_night": 15.0,
+       "transit": 5.0,
+       "extras": 0.0,
+       "ground": 35.0,
+       "in_season": true,
+       "alternatives": [
+        "Rhodopes",
+        "Central Balkan",
+        "Pirin"
+       ]
+      }
+     ]
+    },
+    {
+     "route": "MAD → SOF → VIE → MAD",
+     "out": "2026-10-07",
+     "back": "2026-10-12",
+     "nights": 5,
+     "flights": 105.91,
+     "bags": 37.5,
+     "ground": 198.0,
+     "total": 341.41,
+     "in_season": true,
+     "legs": [
+      {
+       "day": "2026-10-07",
+       "origin": "MAD",
+       "dest": "SOF",
+       "price": 27.99,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-07&originIata=MAD&destinationIata=SOF"
+      },
+      {
+       "day": "2026-10-10",
+       "origin": "SOF",
+       "dest": "VIE",
+       "price": 35.92,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-10&originIata=SOF&destinationIata=VIE"
+      },
+      {
+       "day": "2026-10-12",
+       "origin": "VIE",
+       "dest": "MAD",
+       "price": 42.0,
+       "airline": "FR",
+       "source": "travelpayouts",
+       "link": "https://www.aviasales.com/search/VIE1210MAD1?t=FR17918001001792026900003780VIEBGYMXPMAD_5ce5fc6a7d09310dc9a0df40fb9661b3_4096&search_date=11092026&expected_price_uuid=01a090a9-9ed2-8050-aa28-e300460feee0&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=QDbRuLHX6TGcmnNMnZHcrw&expected_price_source=share&expected_price_currency=eur&expected_price=42"
+      }
+     ],
+     "stops": [
+      {
+       "dest_id": "vitosha",
+       "name": "Vitosha (Sofia day hikes)",
+       "country": "Bulgaria",
+       "airport": "SOF",
+       "arrive": "2026-10-07",
+       "leave": "2026-10-10",
+       "nights": 3,
+       "hostel_per_night": 15.0,
+       "transit": 5.0,
+       "extras": 0.0,
+       "ground": 50.0,
+       "in_season": true,
+       "alternatives": [
+        "Rhodopes",
+        "Central Balkan",
+        "Pirin"
+       ]
+      },
+      {
+       "dest_id": "hallstatt_dachstein",
+       "name": "Hallstatt / Dachstein (5 Fingers, Gosausee)",
+       "country": "Austria",
+       "airport": "VIE",
+       "arrive": "2026-10-10",
+       "leave": "2026-10-12",
+       "nights": 2,
+       "hostel_per_night": 35.0,
+       "transit": 40.0,
+       "extras": 38.0,
+       "ground": 148.0,
+       "in_season": true,
+       "alternatives": []
+      }
+     ]
+    },
+    {
+     "route": "MAD → MRS → BGY → MAD",
+     "out": "2026-10-03",
+     "back": "2026-10-07",
+     "nights": 4,
+     "flights": 93.81,
+     "bags": 37.5,
+     "ground": 211.0,
+     "total": 342.31,
+     "in_season": true,
+     "legs": [
+      {
+       "day": "2026-10-03",
+       "origin": "MAD",
+       "dest": "MRS",
+       "price": 14.99,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-03&originIata=MAD&destinationIata=MRS"
+      },
+      {
+       "day": "2026-10-05",
+       "origin": "MRS",
+       "dest": "BGY",
+       "price": 17.69,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-05&originIata=MRS&destinationIata=BGY"
+      },
+      {
+       "day": "2026-10-07",
+       "origin": "BGY",
+       "dest": "MAD",
+       "price": 61.13,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-07&originIata=BGY&destinationIata=MAD"
+      }
+     ],
+     "stops": [
+      {
+       "dest_id": "calanques",
+       "name": "Calanques (Marseille)",
+       "country": "France",
+       "airport": "MRS",
+       "arrive": "2026-10-03",
+       "leave": "2026-10-05",
+       "nights": 2,
+       "hostel_per_night": 28.0,
+       "transit": 25.0,
+       "extras": 0.0,
+       "ground": 81.0,
+       "in_season": true,
+       "alternatives": [
+        "Gorges du Verdon"
+       ]
+      },
+      {
+       "dest_id": "ticino",
+       "name": "Ticino – Verzasca & Maggia valleys",
+       "country": "Switzerland",
+       "airport": "BGY",
+       "arrive": "2026-10-05",
+       "leave": "2026-10-07",
+       "nights": 2,
+       "hostel_per_night": 40.0,
+       "transit": 50.0,
+       "extras": 0.0,
+       "ground": 130.0,
+       "in_season": true,
+       "alternatives": []
+      }
+     ]
+    },
+    {
+     "route": "MAD → VIE → MRS → MAD",
+     "out": "2026-10-06",
+     "back": "2026-10-10",
+     "nights": 4,
+     "flights": 110.54,
+     "bags": 37.5,
+     "ground": 229.0,
+     "total": 377.04,
+     "in_season": true,
+     "legs": [
+      {
+       "day": "2026-10-06",
+       "origin": "MAD",
+       "dest": "VIE",
+       "price": 57.99,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-06&originIata=MAD&destinationIata=VIE"
+      },
+      {
+       "day": "2026-10-08",
+       "origin": "VIE",
+       "dest": "MRS",
+       "price": 27.55,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-08&originIata=VIE&destinationIata=MRS"
+      },
+      {
+       "day": "2026-10-10",
+       "origin": "MRS",
+       "dest": "MAD",
+       "price": 25.0,
+       "airline": "FR",
+       "source": "travelpayouts",
+       "link": "https://www.aviasales.com/search/MRS1010MAD1?t=FR17916729001791679500000110MRSMAD_d9d3feb650efe6c5b0ebdde583324646_2449&search_date=15092026&expected_price_uuid=01a0a442-5bd2-8030-26eb-59b58ef7a8e2&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=INQ1oQ7O-2OEYqnL-nrozw&expected_price_source=share&expected_price_currency=eur&expected_price=25"
+      }
+     ],
+     "stops": [
+      {
+       "dest_id": "hallstatt_dachstein",
+       "name": "Hallstatt / Dachstein (5 Fingers, Gosausee)",
+       "country": "Austria",
+       "airport": "VIE",
+       "arrive": "2026-10-06",
+       "leave": "2026-10-08",
+       "nights": 2,
+       "hostel_per_night": 35.0,
+       "transit": 40.0,
+       "extras": 38.0,
+       "ground": 148.0,
+       "in_season": true,
+       "alternatives": []
+      },
+      {
+       "dest_id": "calanques",
+       "name": "Calanques (Marseille)",
+       "country": "France",
+       "airport": "MRS",
+       "arrive": "2026-10-08",
+       "leave": "2026-10-10",
+       "nights": 2,
+       "hostel_per_night": 28.0,
+       "transit": 25.0,
+       "extras": 0.0,
+       "ground": 81.0,
+       "in_season": true,
+       "alternatives": [
+        "Gorges du Verdon"
+       ]
+      }
+     ]
+    },
+    {
+     "route": "MAD → SOF → BGY → MRS → MAD",
+     "out": "2026-10-03",
+     "back": "2026-10-10",
+     "nights": 7,
+     "flights": 93.11,
+     "bags": 50.0,
+     "ground": 261.0,
+     "total": 404.11,
+     "in_season": true,
+     "legs": [
+      {
+       "day": "2026-10-03",
+       "origin": "MAD",
+       "dest": "SOF",
+       "price": 38.0,
+       "airline": "W6",
+       "source": "travelpayouts",
+       "link": "https://www.aviasales.com/search/MAD0310SOF1?t=W617910600001791075300000195MADSOF_86dea5cc8829c99492ba07471f0ebf8a_3718&search_date=13092026&expected_price_uuid=01a09b61-899c-8030-ed52-28c007f4b85c&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=e_cbBwgyqHsLyUnK3wEW0w&expected_price_source=share&expected_price_currency=eur&expected_price=38"
+      },
+      {
+       "day": "2026-10-06",
+       "origin": "SOF",
+       "dest": "BGY",
+       "price": 14.99,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-06&originIata=SOF&destinationIata=BGY"
+      },
+      {
+       "day": "2026-10-08",
+       "origin": "BGY",
+       "dest": "MRS",
+       "price": 15.12,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-08&originIata=BGY&destinationIata=MRS"
+      },
+      {
+       "day": "2026-10-10",
+       "origin": "MRS",
+       "dest": "MAD",
+       "price": 25.0,
+       "airline": "FR",
+       "source": "travelpayouts",
+       "link": "https://www.aviasales.com/search/MRS1010MAD1?t=FR17916729001791679500000110MRSMAD_d9d3feb650efe6c5b0ebdde583324646_2449&search_date=15092026&expected_price_uuid=01a0a442-5bd2-8030-26eb-59b58ef7a8e2&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=INQ1oQ7O-2OEYqnL-nrozw&expected_price_source=share&expected_price_currency=eur&expected_price=25"
+      }
+     ],
+     "stops": [
+      {
+       "dest_id": "vitosha",
+       "name": "Vitosha (Sofia day hikes)",
+       "country": "Bulgaria",
+       "airport": "SOF",
+       "arrive": "2026-10-03",
+       "leave": "2026-10-06",
+       "nights": 3,
+       "hostel_per_night": 15.0,
+       "transit": 5.0,
+       "extras": 0.0,
+       "ground": 50.0,
+       "in_season": true,
+       "alternatives": [
+        "Rhodopes",
+        "Central Balkan",
+        "Pirin"
+       ]
+      },
+      {
+       "dest_id": "ticino",
+       "name": "Ticino – Verzasca & Maggia valleys",
+       "country": "Switzerland",
+       "airport": "BGY",
+       "arrive": "2026-10-06",
+       "leave": "2026-10-08",
+       "nights": 2,
+       "hostel_per_night": 40.0,
+       "transit": 50.0,
+       "extras": 0.0,
+       "ground": 130.0,
+       "in_season": true,
+       "alternatives": []
+      },
+      {
+       "dest_id": "calanques",
+       "name": "Calanques (Marseille)",
+       "country": "France",
+       "airport": "MRS",
+       "arrive": "2026-10-08",
+       "leave": "2026-10-10",
+       "nights": 2,
+       "hostel_per_night": 28.0,
+       "transit": 25.0,
+       "extras": 0.0,
+       "ground": 81.0,
+       "in_season": true,
+       "alternatives": [
+        "Gorges du Verdon"
+       ]
+      }
+     ]
+    },
+    {
+     "route": "MAD → MRS → VIE → MAD",
+     "out": "2026-10-03",
+     "back": "2026-10-07",
+     "nights": 4,
+     "flights": 140.98,
+     "bags": 37.5,
+     "ground": 229.0,
+     "total": 407.48,
+     "in_season": true,
+     "legs": [
+      {
+       "day": "2026-10-03",
+       "origin": "MAD",
+       "dest": "MRS",
+       "price": 14.99,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-03&originIata=MAD&destinationIata=MRS"
+      },
+      {
+       "day": "2026-10-05",
+       "origin": "MRS",
+       "dest": "VIE",
+       "price": 68.99,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-05&originIata=MRS&destinationIata=VIE"
+      },
+      {
+       "day": "2026-10-07",
+       "origin": "VIE",
+       "dest": "MAD",
+       "price": 57.0,
+       "airline": "LW",
+       "source": "travelpayouts",
+       "link": "https://www.aviasales.com/search/VIE0710MAD1?t=FR17913747001791422100000790VIEMXPMAD_88a27b904129a0f4ddf50a8a6287b063_5611&search_date=15092026&expected_price_uuid=01a0a401-9ecb-8030-aff2-b9025ed087a3&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=EtOfdOA3oKrZIsc7bXIoqg&expected_price_source=share&expected_price_currency=eur&expected_price=57"
+      }
+     ],
+     "stops": [
+      {
+       "dest_id": "calanques",
+       "name": "Calanques (Marseille)",
+       "country": "France",
+       "airport": "MRS",
+       "arrive": "2026-10-03",
+       "leave": "2026-10-05",
+       "nights": 2,
+       "hostel_per_night": 28.0,
+       "transit": 25.0,
+       "extras": 0.0,
+       "ground": 81.0,
+       "in_season": true,
+       "alternatives": [
+        "Gorges du Verdon"
+       ]
+      },
+      {
+       "dest_id": "hallstatt_dachstein",
+       "name": "Hallstatt / Dachstein (5 Fingers, Gosausee)",
+       "country": "Austria",
+       "airport": "VIE",
+       "arrive": "2026-10-05",
+       "leave": "2026-10-07",
+       "nights": 2,
+       "hostel_per_night": 35.0,
+       "transit": 40.0,
+       "extras": 38.0,
+       "ground": 148.0,
+       "in_season": true,
+       "alternatives": []
+      }
+     ]
+    },
+    {
+     "route": "MAD → MRS → BGY → SOF → MAD",
+     "out": "2026-10-03",
+     "back": "2026-10-10",
+     "nights": 7,
+     "flights": 114.16,
+     "bags": 50.0,
+     "ground": 261.0,
+     "total": 425.16,
+     "in_season": true,
+     "legs": [
+      {
+       "day": "2026-10-03",
+       "origin": "MAD",
+       "dest": "MRS",
+       "price": 14.99,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-03&originIata=MAD&destinationIata=MRS"
+      },
+      {
+       "day": "2026-10-05",
+       "origin": "MRS",
+       "dest": "BGY",
+       "price": 17.69,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-05&originIata=MRS&destinationIata=BGY"
+      },
+      {
+       "day": "2026-10-07",
+       "origin": "BGY",
+       "dest": "SOF",
+       "price": 16.49,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-07&originIata=BGY&destinationIata=SOF"
+      },
+      {
+       "day": "2026-10-10",
+       "origin": "SOF",
+       "dest": "MAD",
+       "price": 64.99,
+       "airline": "Ryanair",
+       "source": "ryanair",
+       "link": "https://www.ryanair.com/es/en/trip/flights/select?adults=1&isReturn=false&dateOut=2026-10-10&originIata=SOF&destinationIata=MAD"
+      }
+     ],
+     "stops": [
+      {
+       "dest_id": "calanques",
+       "name": "Calanques (Marseille)",
+       "country": "France",
+       "airport": "MRS",
+       "arrive": "2026-10-03",
+       "leave": "2026-10-05",
+       "nights": 2,
+       "hostel_per_night": 28.0,
+       "transit": 25.0,
+       "extras": 0.0,
+       "ground": 81.0,
+       "in_season": true,
+       "alternatives": [
+        "Gorges du Verdon"
+       ]
+      },
+      {
+       "dest_id": "ticino",
+       "name": "Ticino – Verzasca & Maggia valleys",
+       "country": "Switzerland",
+       "airport": "BGY",
+       "arrive": "2026-10-05",
+       "leave": "2026-10-07",
+       "nights": 2,
+       "hostel_per_night": 40.0,
+       "transit": 50.0,
+       "extras": 0.0,
+       "ground": 130.0,
+       "in_season": true,
+       "alternatives": []
+      },
+      {
+       "dest_id": "vitosha",
+       "name": "Vitosha (Sofia day hikes)",
+       "country": "Bulgaria",
+       "airport": "SOF",
+       "arrive": "2026-10-07",
+       "leave": "2026-10-10",
+       "nights": 3,
+       "hostel_per_night": 15.0,
+       "transit": 5.0,
+       "extras": 0.0,
+       "ground": 50.0,
+       "in_season": true,
+       "alternatives": [
+        "Rhodopes",
+        "Central Balkan",
+        "Pirin"
+       ]
+      }
+     ]
+    }
+   ]
   }
  ]
 }
