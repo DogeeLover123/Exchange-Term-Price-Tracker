@@ -64,8 +64,8 @@ excludes `.env`.
    `https://<you>.github.io/<repo>` (this turns on the ★ Save links in the email).
    Pages on a private repo needs GitHub Pro; on the free plan make the repo public — it only contains
    the destination list and price history, never your keys.
-6. Actions tab → **trip-tracker → Run workflow** for a force run. It then runs itself every 2 days
-   and commits `data/history.json` back (which also keeps GitHub from disabling the schedule).
+6. Actions tab → **trip-tracker → Run workflow** to run it. Runs are manual only (a commented-out
+   schedule is in the workflow file if you want it back); each run commits `data/history.json` back.
 
 ### Run locally instead / as well
 
@@ -82,8 +82,9 @@ python -m tracker.run --force-verify   # Google-check every in-season trip (burn
 
 ## Using it day to day
 
-- **Every 2 days at 08:00 Madrid** an email arrives: a 🔥 deals table (if any) and the full ranking,
-  each row with Book flight / Google Flights / Hostelworld / Hostelz / Booking / Rome2Rio / ★ Save links.
+- **Runs are manual** (the schedule is commented out in `.github/workflows/trip-tracker.yml`). Each run
+  emails a 🔥 deals table (if any) and the full ranking, each row with Book flight / Google Flights /
+  Hostelworld / Hostelz / Booking / Rome2Rio / ★ Save links.
 - **Want a run now?** GitHub → Actions → trip-tracker → Run workflow. Optional boxes: limit to some
   countries, set a date window (from/to), price **exact dates**, tick **chain** for multi-city routes, (e.g. `Oct 3-10`), or "force verify" everything on
   Google (uses quota).

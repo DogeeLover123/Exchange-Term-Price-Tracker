@@ -9,7 +9,7 @@ search_window:
 fixed_dates: []                   # e.g. ["Oct 3-10", "Nov 5-9"]
 # ---- What to track right now ---------------------------------------------
 # Leave a list empty to mean "all". Country names must match destinations.yaml.
-countries: []                     # e.g. [Bulgaria, Switzerland, Austria, France, Italy]
+countries: [Austria, Switzerland, France, Bulgaria]   # Alps + Eastern Europe (add Italy for the Dolomites); empty = all
 skip_countries: []                # e.g. [Morocco, Portugal]   (applied after `countries`)
 only_destinations: []             # e.g. [rila_seven_lakes, lauterbrunnen]
 skip_destinations: []             # e.g. [vitosha]
